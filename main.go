@@ -1,52 +1,29 @@
 package main
 
+/*
+#include <stdlib.h>
+#include "./test.h"
+*/
+import "C"
 import (
-	// "filer/image"
-	"filer/model"
 	"fmt"
-	// "fmt"
-	// "io/fs"
+	"unsafe"
 )
 
 func main() {
-	// fmt.Println("a ...any")
-	// model.Input(0.111)
-	// model.NewConnect(5)
-	// firsLayer := model.Connect{
-	// 	InputSize: 5,
-	// }
+	firsName := C.CString("sssa")
 
-	inputLayer := model.NewConnect(5, 2)
+	lastName := C.CString("ss22s")
 
-	fmt.Println("inputLayer: ", inputLayer)
-	// model.CreateNetwork(model.Net{
-	// 	2,
-	// 	23,
-	// 	[]int{1, 5},
-	// 	2,
-	// })
-	// image.EachFilesAt("./learn_photos", func(fileName string, _ fs.DirEntry) {
-	// 	// fileName := "./" + file.Name()
-	// 	fmt.Println("FILE: ", fileName)
-	// 	img := image.ReadImage(fileName)
-
-	// 	// image.DecodeImageToInput(img)
-	// 	imageInputs := image.DecodeImageToInput(img)
-
-	// 	net := model.CreateModel([]int{
-	// 		len(imageInputs),
-	// 		100,
-	// 		len(imageInputs),
-	// 	}, 0.01)
-
-	// 	fmt.Println("net")
-	// 	for i := 0; i < 2; i++ {
-
-	// 		fmt.Println("I: ", i)
-	// 		net.Train(imageInputs, imageInputs)
-	// 	}
-	// 	// fmt.Println("Forward: ", net.Forward(imageInputs))
-	// 	fmt.Println("Forward: ", net)
-	// 	fmt.Println("imageInputs: ", len(imageInputs))
-	// })
+	age := C.int(21)
+	msdk2 := C.struct_person_t{
+		firstName: firsName,
+		lastName:  lastName,
+		age:       age,
+	}
+	defer C.free(unsafe.Pointer(firsName))
+	defer C.free(unsafe.Pointer(lastName))
+	// defer C.free(unsafe.Pointer(age))
+	fmt.Println("I am in Go code now!", msdk2, msdk2.person_new(), firsName)
+	// C.inC()
 }
