@@ -28,6 +28,7 @@ Elements CreateWidth(int size)
     cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
 
     free(input);
+    // sssssssss213
     // cudaFree(d_input);
 
     Elements widths = {
@@ -35,6 +36,51 @@ Elements CreateWidth(int size)
         size,
     };
     return widths;
+}
+
+float GetWidthIndex(Elements model, int layerIndex, int inputIndex, int outputIndex)
+{
+
+    int layersCount = model.count;
+    float *inputSizes = model.elements;
+    for (int inputIndex = 0; inputIndex < layersCount; inputIndex++)
+    {
+        int inputSize = inputSizes[inputIndex];
+
+        printf("GetWidthIndex: %d\n", inputSize);
+    }
+    // Elements model = {
+    //     sizes,
+    //     sizeof(sizes) / sizeof(sizes[0]),
+    // };
+    float retur = 0;
+    return retur;
+}
+
+void Forwards(Elements model, Elements widths, Elements input, Elements output)
+{
+
+    int layersCount = model.count;
+    float *inputSizes = model.elements;
+    int layerStartAt = 0;
+    int prevInputsSize = 0;
+    for (int layerIndex = 0; layerIndex < layersCount; layerIndex++)
+    {
+        int inputSize = inputSizes[layerIndex];
+        // if layerIndex !
+        if (layerIndex != 0)
+        {
+            
+        }
+
+        printf("Forwards: %d\n", inputSize);
+        for (int inputIndex = 0; inputIndex < inputSize; inputSize++)
+        {
+        }
+
+        layerStartAt = layerStartAt + (inputSize * prevInputsSize);
+        prevInputsSize = inputSize;
+    }
 }
 
 void CreateModel(Elements model)
@@ -65,42 +111,8 @@ void CreateModel(Elements model)
         outputs,
         2,
     };
-    Forward(model, widths, input, output);
+    Forwards(model, widths, input, output);
 }
-float Forward(Elements model, int layerIndex, int inputIndex, int outputIndex)
-{
-
-    int layersCount = model.count;
-    float *inputSizes = model.elements;
-    for (int inputIndex = 0; inputIndex < layersCount; inputIndex++)
-    {
-        float inputSize = inputSizes[inputIndex];
-
-        printf("inputSize: %d\n", inputSize);
-    }
-    // Elements model = {
-    //     sizes,
-    //     sizeof(sizes) / sizeof(sizes[0]),
-    // };
-    return 0.000;
-}
-void Forward(Elements model, Elements widths, Elements input, Elements output)
-{
-
-    int layersCount = model.count;
-    float *inputSizes = model.elements;
-    for (int inputIndex = 0; inputIndex < layersCount; inputIndex++)
-    {
-        float inputSize = inputSizes[inputIndex];
-
-        printf("inputSize: %d\n", inputSize);
-    }
-    // Elements model = {
-    //     sizes,
-    //     sizeof(sizes) / sizeof(sizes[0]),
-    // };
-}
-
 int main()
 {
 

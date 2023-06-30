@@ -4,5 +4,10 @@ GPU-neural-network
 
 
 ```shell
-nvcc -o ee.exe test.cu && ee.exe
+nvcc -o run.exe cuda.cu && run.exe
+```
+
+
+```shell
+nodemon --watch ./ -e cu --exec "nvcc -o run.exe cuda.cu && run.exe"
 ```
