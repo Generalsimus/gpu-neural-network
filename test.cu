@@ -1,14 +1,156 @@
-// cuda.cu
+#include <iostream>
 #include <stdio.h>
-#include <cuda.h>
 
-__global__ void cudaKernel() {
-    printf("Hello from CUDA kernel!\n");
+// CUDA kernel to add two arrays
+__global__ void addArrays(float *a, float *b, float *c, int size)
+{
+    int tid = blockIdx.x * blockDim.x + threadIdx.x;
+    if (tid < size)
+    {
+        c[tid] = a[tid] + b[tid];
+    }
 }
 
-extern "C" {
-     void runCudaCode() {
-        cudaKernel<<<1, 1>>>();
-        cudaDeviceSynchronize();
+typedef struct Elements
+{
+    float *elements;
+    int count;
+} Elements;
+
+Elements CreateWidth(int size)
+{
+    float *input = (float *)malloc(size * sizeof(float));
+
+    float *d_input;
+
+    cudaMalloc((void **)&d_input, size * sizeof(float));
+
+    cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
+
+    free(input);
+    // cudaFree(d_input);
+
+    Elements widths = {
+        d_input,
+        size,
+    };
+    return widths;
+}
+
+void CreateModel(Elements model)
+{
+    int layersCount = model.count;
+    float *inputSizes = model.elements;
+    int widthCount = 0;
+    int prevValue = 0;
+    for (int i = 0; i < layersCount; i++)
+    {
+        int layerInputsSize = inputSizes[i];
+        widthCount = widthCount + (layerInputsSize * prevValue);
+
+        printf("Element %d: %d\n", i, layerInputsSize);
+        prevValue = layerInputsSize;
     }
+    printf("eeee: %d\n", widthCount);
+
+    Elements widths = CreateWidth(widthCount);
+
+    float inputs[] = {3, 5, 2};
+    Elements input = {
+        inputs,
+        3,
+    };
+    float outputs[] = {3, 5};
+    Elements output = {
+        outputs,
+        2,
+    };
+    Forward(model, widths, input, output);
+}
+float Forward(Elements model, int layerIndex, int inputIndex, int outputIndex)
+{
+
+    int layersCount = model.count;
+    float *inputSizes = model.elements;
+    for (int inputIndex = 0; inputIndex < layersCount; inputIndex++)
+    {
+        float inputSize = inputSizes[inputIndex];
+
+        printf("inputSize: %d\n", inputSize);
+    }
+    // Elements model = {
+    //     sizes,
+    //     sizeof(sizes) / sizeof(sizes[0]),
+    // };
+    return 0.000;
+}
+void Forward(Elements model, Elements widths, Elements input, Elements output)
+{
+
+    int layersCount = model.count;
+    float *inputSizes = model.elements;
+    for (int inputIndex = 0; inputIndex < layersCount; inputIndex++)
+    {
+        float inputSize = inputSizes[inputIndex];
+
+        printf("inputSize: %d\n", inputSize);
+    }
+    // Elements model = {
+    //     sizes,
+    //     sizeof(sizes) / sizeof(sizes[0]),
+    // };
+}
+
+int main()
+{
+
+    float sizes[] = {3, 5, 2};
+    Elements model = {
+        sizes,
+        sizeof(sizes) / sizeof(sizes[0]),
+    };
+
+    CreateModel(model);
+    // printf("Eleqweqwement: %d\n", sizes);
+    ////
+    // const int arraySize = 10;
+    // const int arrayBytes = arraySize * sizeof(float);
+
+    // // Input arrays and output array on the host (CPU)
+    // float a[arraySize] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0};
+    // float b[arraySize] = {10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0};
+    // float c[arraySize] = {0};
+
+    // // Device (GPU) pointers for arrays
+    // float *dev_a, *dev_b, *dev_c;
+
+    // // Allocate memory on the GPU
+    // cudaMalloc((void**)&dev_a, arrayBytes);
+    // cudaMalloc((void**)&dev_b, arrayBytes);
+    // cudaMalloc((void**)&dev_c, arrayBytes);
+
+    // // Copy input arrays from host to device
+    // cudaMemcpy(dev_a, a, arrayBytes, cudaMemcpyHostToDevice);
+    // cudaMemcpy(dev_b, b, arrayBytes, cudaMemcpyHostToDevice);
+
+    // // Launch kernel on the GPU
+    // int threadsPerBlock = 256;
+    // int blocksPerGrid = (arraySize + threadsPerBlock - 1) / threadsPerBlock;
+    // addArrays<<<blocksPerGrid, threadsPerBlock>>>(dev_a, dev_b, dev_c, arraySize);
+
+    // // Copy the result from device to host
+    // cudaMemcpy(c, dev_c, arrayBytes, cudaMemcpyDeviceToHost);
+
+    // // Free memory on the GPU
+    // cudaFree(dev_a);
+    // cudaFree(dev_b);
+    // cudaFree(dev_c);
+
+    // // Print the result
+    // for (int i = 0; i < arraySize; ++i) {
+    //     std::cout << c[i] << " ";
+    // }
+    // std::cout << std::endl;
+
+    return 0;
 }

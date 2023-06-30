@@ -1,8 +1,21 @@
-// #include <stdio.h>
-// #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <cuda.h>
 // #include <math.h>
 // #include <C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\cuda_runtime.h>
+// test.cu
 
+void cudaKernel()
+{
+    printf("Hello from CUDA kernel!\n");
+}
+
+void testRun()
+{
+    cudaKernel<<<1, 1>>>();
+    cudaDeviceSynchronize();
+}
 // typedef struct Model
 // {
 //     int *layersSizes;
