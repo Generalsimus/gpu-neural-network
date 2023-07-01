@@ -11,24 +11,32 @@ __global__ void addArrays(float *a, float *b, float *c, int size)
     }
 }
 
-typedef struct Model
+typedef struct Inputs
 {
-    float *elements;
+    float *allocatedInputs;
     int count;
-} Model;
+} Inputs;
 
 typedef struct Connect
 {
-     float *widths;
-     float *biases;
+    float *widths;
+    float *biases;
 } Connect;
+
+typedef struct Model
+{
+    Inputs *inputs;
+    Connect *connects;
+    int count;
+} Model;
+
 // typedef struct Connects
 // {
 //     Connect *Connects;
 //     int count;
 // } Connects;
 
-Elements AllocateGpuFloatArray(int size)
+float *AllocateGpuFloatArray(int size)
 {
     float *input = (float *)malloc(size * sizeof(float));
 
@@ -39,14 +47,8 @@ Elements AllocateGpuFloatArray(int size)
     cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
 
     free(input);
-    // sssssssss213
-    // cudaFree(d_input);
 
-    Elements widths = {
-        d_input,
-        size,
-    };
-    return widths;
+    return d_input;
 }
 
 // float GetWidthIndex(Elements model, int layerIndex, int inputIndex, int outputIndex)
@@ -67,24 +69,58 @@ Elements AllocateGpuFloatArray(int size)
 //     float retur = 0;
 //     return retur;
 // }
+// float **AllocateModelInputs(Model model)
+// {
+//     int connectsCount = model.count - 1;
+//     float** inputs;
+//     cudaMalloc((void**)&inputs, connectsCount * sizeof(float*));
+//     for (int connectionIndx = 0; connectionIndx < connectsCount; connectionIndx++)
+//     {
+// inputs[connectionIndx] =
+//     }
+// }
 
-Elements Forwards(Elements model, Connects LayerConnects, Elements input, Elements output)
+float *Forwards(Connect *LayerConnect, float *inputs, float *allocatedOutput, int inputSize, int outputSize)
 {
 
-    for (int connectionIndx = 0; connectionIndx < LayerConnects.count; connectionIndx++)
+    for (int outputIndex = 0; outputIndex < outputSize; outputIndex++)
     {
-        int inputSize = model.elements[connectionIndx - 1];
-        int outputSize = model.elements[connectionIndx];
+        float output = 0;
+
+        for (int inputIndex = 0; inputIndex < inputSize; inputIndex++)
+        {
+            float input = inputs[inputIndex];
+            output += input * (outputIndex * inputSize + inputIndex);
+        };
+        allocatedOutput[outputIndex] = output;
+    }
+}
+
+float *Forwards(Model model, Connect *LayerConnects, float *input, float *output)
+{
+
+    int connectsCount = model.count - 1;
+    for (int connectionIndx = 0; connectionIndx < connectsCount; connectionIndx++)
+    {
+
+        int inputSize = model.layersSizes[connectionIndx - 1];
+        int outputSize = model.layersSizes[connectionIndx];
 
         float *currentOutput = (float *)malloc(outputSize * sizeof(float));
 
-        Connect connect = LayerConnects.Connects[connectionIndx];
+        Connect connect = LayerConnects[connectionIndx];
 
-        Elements currentWidths = connect.widths;
-        Elements currentBiases = connect.biases;
+        float *currentWidths = connect.widths;
+        float *currentBiases = connect.biases;
 
-        // for (int connectionIndx = 0; connectionIndx < LayerConnects->count; connectionIndx++)
+        // for (int outputIndex = 0; outputIndex < outputSize; outputIndex++)
         // {
+        //     float outputForwardValue = 0;
+        //     for (int inputIndex = 0; inputIndex < inputSize; inputIndex++)
+        //     {
+        //     }
+
+        //     currentOutput[outputIndex] = outputForwardValue;
         // }
 
         // float *currentOutput = (float *)malloc(outputSize * sizeof(float));
@@ -125,62 +161,57 @@ Elements Forwards(Elements model, Connects LayerConnects, Elements input, Elemen
 //     return aaa;
 // };
 
-Connects CreateModel(Elements model)
+Model CreateModel(int layersSizes[], int count)
 {
-    int layersCount = model.count;
-    float *inputSizes = model.elements;
+    Connect *LayerConnects = (Connect *)malloc((count - 1) * sizeof(Connect));
+    Inputs *LayerInputs = (Inputs *)malloc(count * sizeof(Inputs));
 
-    Connect *LayerConnects = (Connect *)malloc(layersCount * sizeof(Connect));
     int prevLayerInputsSize = 0;
-
-    for (int i = 0; i < layersCount; i++)
+    for (int i = 0; i < count; i++)
     {
-        int layerInputsSize = inputSizes[i];
+        int layerInputsSize = layersSizes[i];
+
+        Inputs inputs = {
+            AllocateGpuFloatArray(layerInputsSize),
+            layerInputsSize,
+        };
+
+        LayerInputs[i] = inputs;
         if (i == 0)
         {
             Connect connect = {
                 AllocateGpuFloatArray(layerInputsSize * prevLayerInputsSize),
                 AllocateGpuFloatArray(layerInputsSize),
             };
-            LayerConnects[i] = connect;
 
-            // LayerConnects[i] = CreateWidth(layerInputsSize * prevLayerInputsSize);
+            LayerConnects[i] = connect;
         };
 
         printf("Element %d: %d\n", i, layerInputsSize);
         prevLayerInputsSize = layerInputsSize;
     };
-
-    Connects Connects = {
+    Model model = {
+        LayerInputs,
         LayerConnects,
-        layersCount,
+        count,
     };
-
-    return Connects;
+    return model;
 }
 int main()
 {
 
-    float sizes[] = {3, 5, 2};
-    Elements model = {
-        sizes,
-        sizeof(sizes) / sizeof(sizes[0]),
-    };
+    int sizes[] = {3, 5, 2};
+    // Model model = {
+    //     sizes,
+    //     sizeof(sizes) / sizeof(sizes[0]),
+    // };
 
-    Connects Connects = CreateModel(model);
+    Connect *Connects = CreateModel(sizes, 3);
 
     float inputs[] = {3, 5, 2};
-    Elements input = {
-        inputs,
-        3,
-    };
     float outputs[] = {3, 5};
-    Elements output = {
-        outputs,
-        2,
 
-    };
-    Forwards(model, Connects, input, output);
+    Forwards(model, Connects, inputs, outputs);
 
     // printf("Eleqweqwement: %d\n", sizes);
     ////
