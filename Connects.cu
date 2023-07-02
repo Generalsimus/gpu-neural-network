@@ -1,6 +1,4 @@
 
-// #include "utils.cu"
-// #include "structs.cu"
 
 typedef struct Connects
 {
@@ -20,11 +18,11 @@ Connects CreateConnection(int inputSize, int outputSize)
 
 void Forward(Connects LayerConnect, Inputs input, Inputs output)
 {
+
     int outputSize = output.count;
     int inputSize = input.count;
-    float *widths = LayerConnect.widths;
+    // float *widths = LayerConnect.widths;
     float *biases = LayerConnect.biases;
-
 
     for (int outputIndex = 0; outputIndex < outputSize; outputIndex++)
     {

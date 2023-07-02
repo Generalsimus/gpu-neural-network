@@ -194,11 +194,14 @@ typedef struct Model
 
 int main()
 {
-    printf("Unknown for222cifier\n");
-    int sizes[] = {3, 5, 2};
+    // int sizes[] = {3, 5, 2};
+    // printf("sizes: %d\n", sizes);
 
-    Channel chan;
-    printf("Unknasdasdfier\n", chan);
+    Channel chan = {};
+
+    AddOutputInput(chan, 3);
+
+    printf(  chan);
     // Model model = {
     //     sizes,
     //     sizeof(sizes) / sizeof(sizes[0]),

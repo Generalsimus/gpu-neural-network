@@ -1,19 +1,20 @@
 
 #include "structs.cu"
 #include "utils.cu"
-#include "Connects.cu"
+#include "connects.cu"
 
+////////////////////////
 typedef struct Channel
 {
     Inputs *allocatedOutputs;
     Connects *allocatedConnects;
-    int count;
+    int inputsCount;
 } Channel;
 
 Inputs ForWards(Channel chan, Inputs input)
 {
     Inputs *inputs = &input;
-    for (int connectIndex = 1; connectIndex < chan.count; connectIndex++)
+    for (int connectIndex = 1; connectIndex < chan.inputsCount; connectIndex++)
     {
         Connects connect = chan.allocatedConnects[connectIndex];
         Inputs outputs = chan.allocatedOutputs[connectIndex];
@@ -24,42 +25,41 @@ Inputs ForWards(Channel chan, Inputs input)
 
     return input;
 }
+
 void AddOutputInput(Channel chan, int inputSize)
 {
-    // Inputs *allocatedOutputs;
-    int count = (chan.count + 1);
-    if (count > 1)
+    int inputsCount = (chan.inputsCount + 1);
+    if (inputsCount > 0)
     {
-        Inputs *allocatedOutputs = (Inputs *)malloc(count * sizeof(Inputs));
 
-        for (int outputIndex = 0; outputIndex < chan.count; outputIndex++)
+        ////////////////////////////////////////////////////////
+        Inputs *allocatedOutputs = (Inputs *)malloc(inputsCount * sizeof(Inputs));
+
+        for (int outputIndex = 0; outputIndex < chan.inputsCount; outputIndex++)
         {
             allocatedOutputs[outputIndex] = chan.allocatedOutputs[outputIndex];
         };
-
         Inputs newInputsElement = {
             AllocateGpuFloatArray(inputSize),
             inputSize,
         };
 
-        allocatedOutputs[count] = newInputsElement;
+        allocatedOutputs[inputsCount] = newInputsElement;
+        ////////////////////////////////////////////////////////
 
-        chan.allocatedOutputs = allocatedOutputs;
+        Connects *allocatedConnects = (Connects *)malloc(inputsCount * sizeof(Connects));
 
-        Connects *allocatedConnects = (Connects *)malloc(count * sizeof(Connects));
-
-        int connectsCount = chan.count - 1;
+        int connectsCount = chan.inputsCount - 1;
         for (int connectIndex = 0; connectIndex < connectsCount; connectIndex++)
         {
             allocatedConnects[connectIndex] = chan.allocatedConnects[connectIndex];
         };
-
-        Inputs lastElement = allocatedOutputs[count - 1];
+        Inputs lastElement = allocatedOutputs[inputsCount - 1];
         Connects connects = CreateConnection(lastElement.count, inputSize);
-        allocatedConnects[count] = connects;
+        allocatedConnects[inputsCount] = connects;
 
-        chan.allocatedConnects = allocatedConnects;
-    };
+        ////////////////////////////////////////////////////////
+    }
 
-    chan.count = count;
+    chan.inputsCount = inputsCount;
 }
