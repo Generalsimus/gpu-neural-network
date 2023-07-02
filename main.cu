@@ -194,14 +194,21 @@ typedef struct Model
 
 int main()
 {
-    // int sizes[] = {3, 5, 2};
-    // printf("sizes: %d\n", sizes);
+    float sizes[] = {3, 5, 2};
+    Inputs st = {
+        sizes,
+        3,
+    };
+     // printf("sizes: %d\n", sizes);
 
     Channel chan = {};
 
-    AddOutputInput(chan, 3);
+    AddOutputInput(&chan, 3);
+    AddOutputInput(&chan, 4);
 
-    printf(  chan);
+    printf("chan: %d\n", chan.inputsCount);
+
+    ForWards(&chan, st);
     // Model model = {
     //     sizes,
     //     sizeof(sizes) / sizeof(sizes[0]),
