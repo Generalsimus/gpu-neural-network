@@ -1,5 +1,4 @@
 
-#include "structs.cu"
 #include "utils.cu"
 #include "connects.cu"
 
@@ -8,58 +7,81 @@ typedef struct Channel
 {
     Inputs *allocatedOutputs;
     Connects *allocatedConnects;
-    int inputsCount;
+    int outputLayerSize;
+    int layersCount;
 } Channel;
 
-Inputs ForWards(Channel *chan, Inputs input)
+__global__ void ForWards(Channel *chan, Inputs *forwardInput)
 {
-    Inputs *inputs = &input;
-    for (int connectIndex = 1; connectIndex < (*chan).inputsCount; connectIndex++)
+    for (int connectIndex = 0; connectIndex < ((*chan).layersCount - 1); connectIndex++)
     {
+
         Connects connect = (*chan).allocatedConnects[connectIndex];
         Inputs outputs = (*chan).allocatedOutputs[connectIndex];
 
-        Forward(connect, *inputs, outputs);
-        *inputs = outputs;
-    }
+        Forward(&connect, forwardInput, &outputs);
 
-    return input;
+        ////
+        *forwardInput = outputs;
+    }
 }
 
-void AddOutputInput(Channel *chan, int inputSize)
+__global__ void AddOutputInput(Channel *chan, int inputSize)
 {
-    int inputsCount = (*chan).inputsCount + 1;
-    if (inputsCount > 0)
+
+    // std::cout << "Logger Data: ";
+    // std::cout << 12 << " ";
+    // for (int i = 0; i < dataSize; ++i) {
+    //     std::cout << logData[i] << " ";
+    // }
+    // std::cout << std::endl;
+    printf("lDdsds\n");
+    int layersCount = chan->layersCount;
+    printf("layersCount: %d \n", layersCount);
+    if (layersCount > 0)
     {
+        int connectsCount = layersCount - 1;
 
         ////////////////////////////////////////////////////////
-        Inputs *allocatedOutputs = (Inputs *)malloc(inputsCount * sizeof(Inputs));
+        Inputs *allocatedOutputs = NewGpuAllocateInputs(layersCount);
+        // (Inputs *)malloc(layersCount * sizeof(Inputs));
 
-        for (int outputIndex = 0; outputIndex < (*chan).inputsCount; outputIndex++)
+        for (int outputIndex = 0; outputIndex < connectsCount; outputIndex++)
         {
-            allocatedOutputs[outputIndex] = (*chan).allocatedOutputs[outputIndex];
-        };
-        Inputs newInputsElement = {
-            AllocateGpuFloatArray(inputSize),
-            inputSize,
+            printf("WW: %d \n", outputIndex);
+            allocatedOutputs[outputIndex] = chan->allocatedOutputs[outputIndex];
         };
 
-        allocatedOutputs[inputsCount] = newInputsElement;
+        Inputs *newInputsElement = NewGpuAllocateSingleInputs(inputSize);
+        allocatedOutputs[connectsCount] = *newInputsElement;
+        (*chan).allocatedOutputs = allocatedOutputs;
+
+        printf("7885: %d \n", newInputsElement->count);
+
         ////////////////////////////////////////////////////////
 
-        Connects *allocatedConnects = (Connects *)malloc(inputsCount * sizeof(Connects));
+        Connects *allocatedConnects = NewGpuAllocateConnects(layersCount);
 
-        int connectsCount = (*chan).inputsCount - 1;
         for (int connectIndex = 0; connectIndex < connectsCount; connectIndex++)
         {
-            allocatedConnects[connectIndex] = (*chan).allocatedConnects[connectIndex];
+            allocatedConnects[connectIndex] = chan->allocatedConnects[connectIndex];
         };
-        Inputs lastElement = allocatedOutputs[inputsCount - 1];
-        Connects connects = CreateConnection(lastElement.count, inputSize);
-        allocatedConnects[inputsCount] = connects;
+
+        Connects *connects = CreateConnection((*chan).outputLayerSize, inputSize);
+        allocatedConnects[connectsCount] = *connects;
+
+        (*chan).allocatedConnects = allocatedConnects;
 
         ////////////////////////////////////////////////////////
     }
 
-    (*chan).inputsCount = inputsCount;
+    (*chan).outputLayerSize = inputSize;
+    (*chan).layersCount = layersCount + 1;
+}
+
+Channel *NewGpuAllocateChannel(int size)
+{
+    Channel *devicePtr;
+    cudaMalloc(&devicePtr, size * sizeof(float));
+    return devicePtr;
 }

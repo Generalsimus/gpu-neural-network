@@ -1,5 +1,5 @@
 
-float *AllocateGpuFloatArray(int size)
+  float *AllocateGpuFloatArray(int size)
 {
     float *input = (float *)malloc(size * sizeof(float));
 
@@ -13,3 +13,10 @@ float *AllocateGpuFloatArray(int size)
 
     return d_input;
 }
+
+// template <typename T>
+// T* allocateDeviceMemory(int size) {
+//     T* devicePtr;
+//     cudaMalloc(&devicePtr, size * sizeof(T));
+//     return devicePtr;
+// }
