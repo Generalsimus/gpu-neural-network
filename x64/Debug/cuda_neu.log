@@ -1,0 +1,10 @@
+﻿  Skipping CUDA source file channel.cu (excluded from build).
+  Skipping CUDA source file utils.cu (excluded from build).
+  Compiling CUDA source file main.cu...
+  Skipping CUDA source file inputs.cu (excluded from build).
+  Skipping CUDA source file connects.cu (excluded from build).
+  
+  C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\x64\Debug\main.cu.obj "C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu" 
+  main.cu
+  tmpxft_00000f94_00000000-7_main.cudafe1.cpp
+  cuda_neu.vcxproj -> C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\x64\Debug\cuda_neu.exe

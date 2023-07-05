@@ -1,22 +1,16 @@
+#include "cuda_runtime.h"
 
-  float *AllocateGpuFloatArray(int size)
+ float* AllocateGpuFloatArray(int size)
 {
-    float *input = (float *)malloc(size * sizeof(float));
+  //  float* input = (float*)malloc(size * sizeof(float));
 
-    float *d_input;
+    float* d_input;
 
-    cudaMalloc((void **)&d_input, size * sizeof(float));
+    cudaMalloc((void**)&d_input, size * sizeof(float));
 
-    cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
+   // cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
 
-    free(input);
+  //  free(input);
 
     return d_input;
 }
-
-// template <typename T>
-// T* allocateDeviceMemory(int size) {
-//     T* devicePtr;
-//     cudaMalloc(&devicePtr, size * sizeof(T));
-//     return devicePtr;
-// }
