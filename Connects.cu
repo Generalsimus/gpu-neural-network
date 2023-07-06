@@ -11,24 +11,28 @@ __device__ void Forward(Connects* LayerConnect, Inputs* input, Inputs* output)
 
     int outputSize = output->count;
     int inputSize = input->count;
-    // float *widths = LayerConnect.widths;
+
     float* biases = LayerConnect->biases;
-    // printf("outputSize: %d\n", outputSize);
-    // printf("inputSize: %d\n", inputSize);
+    float* widths = LayerConnect->widths;
+
 
     for (int outputIndex = 0; outputIndex < outputSize; outputIndex++)
     {
-      //  printf("Aa: %d\n", outputIndex);
+
         float outputElement = 0;
 
         for (int inputIndex = 0; inputIndex < inputSize; inputIndex++)
         {
             float inputElement = input->allocatedInputs[inputIndex];
-            outputElement += inputElement * (outputIndex * inputSize + inputIndex);
+
+            int widthIndex = ((inputIndex * outputIndex) + outputIndex);
+
+            outputElement += inputElement * widths[widthIndex];
         };
         (*output).allocatedInputs[outputIndex] = outputElement + biases[outputIndex];
     };
 }
+// ((inputIndex* OutputIndex) + OutputIndex)
 
 
 __device__ Connects* CreateConnection(int inputSize, int outputSize)
@@ -41,13 +45,13 @@ __device__ Connects* CreateConnection(int inputSize, int outputSize)
 
     cudaMalloc(&biases, outputSize * sizeof(float));
 
-    Connects* devicePtr;
-    cudaMalloc(&devicePtr, sizeof(Connects));
+    Connects* connects;
+    cudaMalloc(&connects, sizeof(Connects));
 
-    (*devicePtr).widths = widths;
-    (*devicePtr).biases = biases;
+    (*connects).widths = widths;
+    (*connects).biases = biases;
 
-    return devicePtr;
+    return connects;
 };
 
 

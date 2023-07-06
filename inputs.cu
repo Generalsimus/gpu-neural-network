@@ -1,4 +1,6 @@
 #include "cuda_runtime.h"
+#include "utils.cu"
+
 
 typedef struct Inputs
 {
@@ -15,18 +17,22 @@ __device__ Inputs* NewGpuAllocateInputs(int size)
     return inputs;
 };
 
+ 
 __device__ Inputs* NewGpuAllocateSingleInputs(int size)
 {
-
     float* inputsValues;
-
+     
     cudaMalloc(&inputsValues, size * sizeof(float));
 
+
     Inputs* inputs;
+
     cudaMalloc(&inputs, sizeof(Inputs));
 
-    (*inputs).allocatedInputs = inputsValues;
-    (*inputs).count = size;
+
+    inputs->allocatedInputs = inputsValues;
+    inputs->count = size;
+
 
     return inputs;
 };

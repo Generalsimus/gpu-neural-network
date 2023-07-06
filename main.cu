@@ -4,16 +4,45 @@
 #include "channel.cu"
 #include <stdio.h>
 
- 
- 
 int main()
 {
 
-     Channel *chan = NewGpuAllocateChannel(1);
+    Channel* chan = NewGpuAllocateChannel(1);
 
+    int threadsPerBlock = 1;
+    int blocksPerGrid = 1;
+
+    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
 
 
     printf("{1,2,3,4,5} + {10,20,30,40,50} =  \n");
+
+   // float sizes[] = { 3, 5, 2 };
+   // Inputs inputs = {
+  //      sizes,
+  //      3,
+  //  };
+
+  //  Inputs* gpuRes;
+
+  //  cudaMalloc(&gpuRes, sizeof(Inputs));
+  //  cudaMemcpy(gpuRes, &inputs, sizeof(Inputs), cudaMemcpyHostToDevice);
+
+   // ForWards<<<blocksPerGrid, threadsPerBlock>>> (chan, gpuRes);
+
+  //  Inputs* cpuOut;
+    // cudaMalloc(&cpuOut, sizeof(Inputs));
+
+ //   cudaMemcpy(&cpuOut, gpuRes, sizeof(Inputs), cudaMemcpyDeviceToHost);
+
+  //  printf("{1,2,3,4,5} + {10,20,30,40,50} = %d \n", cpuOut->count);
+//    for (int outputIndex = 0; outputIndex < cpuOut->count; outputIndex++)
+//    {
+//        printf("Element %d: %.2f\n", outputIndex, cpuOut->allocatedInputs[outputIndex]);
+//    }
      
     return 0;
 }
