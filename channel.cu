@@ -13,6 +13,33 @@ typedef struct Channel
 
 __global__ void ForWards(Channel* chan, Inputs* forwardInput)
 { 
+
+#if __CUDA_ARCH__ >= 200
+    printf("FORWARD: \n");
+
+#endif
+    for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
+    {
+#if __CUDA_ARCH__ >= 200
+        printf("connectIndex: %d\n", connectIndex);
+
+#endif
+    }
+
+  /*  for (int connectIndex = 0; connectIndex < ((*chan).layersCount - 1); connectIndex++)
+    {
+       #if __CUDA_ARCH__ >= 200
+             printf("connectIndex: %d \n", connectIndex);
+        
+         #endif
+
+        Connects connect = (*chan).allocatedConnects[connectIndex];
+        Inputs  outputs = (*chan).allocatedOutputs[connectIndex];
+
+       // Forward(&connect, forwardInput, &outputs);
+
+       *forwardInput = outputs;
+    }*/
 };
 
 void AddOutputInput(Channel* chan, int inputSize)

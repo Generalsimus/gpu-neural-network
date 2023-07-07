@@ -40,13 +40,13 @@ int main()
 
 
 
-    //cudaDeviceSynchronize();
+     cudaDeviceSynchronize();
 
-    //// Check for errors
-    //cudaError_t error = cudaGetLastError();
-    //if (error != cudaSuccess) {
-    //    printf("CUDA error: %s\n", cudaGetErrorString(error));
-    //}
+    // Check for errors
+     cudaError_t error = cudaGetLastError();
+    if (error != cudaSuccess) {
+        printf("CUDA error: %s\n", cudaGetErrorString(error));
+     }
     //Channel* chan = NewGpuAllocateChannel(1);
 
     //int threadsPerBlock = 1;
