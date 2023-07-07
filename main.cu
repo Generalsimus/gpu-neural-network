@@ -7,18 +7,59 @@
 int main()
 {
 
-    Channel* chan = NewGpuAllocateChannel(1);
+    Channel chan = {};
+
+    AddOutputInput(&chan, 3);
+    AddOutputInput(&chan, 3);
+    AddOutputInput(&chan, 3);
+    AddOutputInput(&chan, 3);
+
+
+    Channel* gpuChan;
+
+    cudaMalloc(&gpuChan, sizeof(Channel));
+    cudaMemcpy(gpuChan, &chan, sizeof(Channel), cudaMemcpyHostToDevice);
+
+
+
+    printf("{1,2,3,4,5} + {10,20,30,40,50} =  \n");
+
 
     int threadsPerBlock = 1;
     int blocksPerGrid = 1;
 
-    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
-    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
-    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
-    AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    float sizes[] = { 3, 5, 2 };
+    Inputs inputs = {
+     sizes,
+     3,
+   };
+
+    Inputs* forwardOutput = &inputs;
+    
+    ForWards<<<blocksPerGrid, threadsPerBlock>>>(&chan, forwardOutput);
 
 
-    printf("{1,2,3,4,5} + {10,20,30,40,50} =  \n");
+
+    //cudaDeviceSynchronize();
+
+    //// Check for errors
+    //cudaError_t error = cudaGetLastError();
+    //if (error != cudaSuccess) {
+    //    printf("CUDA error: %s\n", cudaGetErrorString(error));
+    //}
+    //Channel* chan = NewGpuAllocateChannel(1);
+
+    //int threadsPerBlock = 1;
+    //int blocksPerGrid = 1;
+    // 
+
+    //AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    //AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    //AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+    //AddOutputInput<<<blocksPerGrid, threadsPerBlock>>>(chan, 3);
+
+
+    //printf("{1,2,3,4,5} + {10,20,30,40,50} =  \n");
 
    // float sizes[] = { 3, 5, 2 };
    // Inputs inputs = {

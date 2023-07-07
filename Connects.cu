@@ -39,14 +39,14 @@ __device__ Connects* CreateConnection(int inputSize, int outputSize)
 {
     float* widths;
 
-    cudaMalloc(&widths, inputSize * outputSize * sizeof(float));
+    cudaMalloc((void**)&widths, inputSize * outputSize * sizeof(float));
 
     float* biases;
 
-    cudaMalloc(&biases, outputSize * sizeof(float));
+    cudaMalloc((void**)&biases, outputSize * sizeof(float));
 
     Connects* connects;
-    cudaMalloc(&connects, sizeof(Connects));
+    cudaMalloc((void**)&connects, sizeof(Connects));
 
     (*connects).widths = widths;
     (*connects).biases = biases;
@@ -58,6 +58,6 @@ __device__ Connects* CreateConnection(int inputSize, int outputSize)
 __device__ Connects* NewGpuAllocateConnects(int size)
 {
     Connects* connect;
-    cudaMalloc(&connect, size * sizeof(Connects));
+    cudaMalloc((void**)&connect, size * sizeof(Connects));
     return connect;
 }
