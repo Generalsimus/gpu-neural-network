@@ -37,3 +37,4 @@ float* AllocateGpuFloatArray(int size)
 //__device__ void setStructProperty(T* myStruct, PropertyType T::* property, PropertyType newValue) {
 //    myStruct->*property = newValue;
 //}
+

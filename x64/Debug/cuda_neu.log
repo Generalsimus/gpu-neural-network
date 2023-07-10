@@ -5,6 +5,39 @@
   Skipping CUDA source file connects.cu (excluded from build).
   
   C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\x64\Debug\main.cu.obj "C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu" 
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(74): warning #1056-D: returning pointer to local variable
+            return res;
+                   ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(78): warning #1056-D: returning pointer to local variable
+        return res;
+               ^
+  
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(125): warning #61-D: integer operation result is out of range
+         cudaMalloc((void**)&widts, inputsize* outputsize * sizeof(float));
+                                             ^
+  
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(74): warning #1056-D: returning pointer to local variable
+            return res;
+                   ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(78): warning #1056-D: returning pointer to local variable
+        return res;
+               ^
+  
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(125): warning #61-D: integer operation result is out of range
+         cudaMalloc((void**)&widts, inputsize* outputsize * sizeof(float));
+                                             ^
+  
+C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu(195): warning #177-D: variable "maxThreadsPerBlock" was declared but never referenced
+         int maxThreadsPerBlock = devicePropp.maxThreadsPerBlock;
+             ^
+  
   main.cu
-  tmpxft_00003dd4_00000000-7_main.cudafe1.cpp
-  cuda_neu.vcxproj -> C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\x64\Debug\cuda_neu.exe
+  tmpxft_00007784_00000000-7_main.cudafe1.cpp
+C:\Users\PC\AppData\Local\Temp\tmpxft_00007784_00000000-7_main.cudafe1.cpp : fatal error C1033: cannot open program database 'C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\x64\Debug\vc143.pdb'
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\CUDA 12.2.targets(799,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\x64\Debug\main.cu.obj "C:\Users\PC\Desktop\PROJECTS\MegaSync\GO\cuda_neu\cuda_neu\main.cu"" exited with code 2.
