@@ -19,6 +19,29 @@ float* AllocateGpuFloatArray(int size)
 
     return d_input;
 };
+
+
+template<typename T>
+T* AddElement(T* array, size_t size, T element)
+{
+    // Create a new array with increased size
+    size_t newSize = size + 1;
+    T* newArray = (T*)malloc(newSize * sizeof(T));
+
+    // Copy existing elements to the new array
+    for (size_t i = 0; i < size; i++)
+    {
+        newArray[i] = array[i];
+    }
+
+    // Append the new element
+    newArray[size] = element;
+
+    // Free the memory of the old array
+    free(array);
+
+    return newArray;
+}
 //#define CHECK_CUDA_ERROR(val) check((val), #val, __FILE__, __LINE__)
 //template <typename T>
 //void check(T err, const char* const func, const char* const file,
@@ -38,3 +61,31 @@ float* AllocateGpuFloatArray(int size)
 //    myStruct->*property = newValue;
 //}
 
+template<typename F>
+__global__ void AllocateArrayInGpuWithDefaultValue(F* inputs, size_t* size, F* defaultNum)
+{ 
+    size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    inputs[inputIndex] = *defaultNum;
+
+    // printf("Fill Float value: %f\n", inputs[inputIndex]);
+}
+
+
+size_t FindBalanceThread(size_t num)
+{
+    int device;
+    cudaGetDevice(&device);
+
+    cudaDeviceProp deviceProp;
+    cudaGetDeviceProperties(&deviceProp, device);
+
+
+    for (size_t testNum = deviceProp.maxThreadsPerBlock; testNum != 0; --testNum) {
+        if ((num % testNum) == 0) {
+            return testNum;
+        }
+    }
+
+    return 1;
+};

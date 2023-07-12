@@ -1,21 +1,13 @@
-﻿
-#include "cuda_runtime.h"
+﻿#include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include "channel.cu"
-#include <stdio.h>
 #include <cmath>
+#include <stdio.h>
+#include <stdlib.h>
 
  
 
-
-
-
-
-//uint3 __device_builtin__ __STORAGE__ threadIdx;
-//uint3 __device_builtin__ __STORAGE__ blockIdx;
-//dim3 __device_builtin__ __STORAGE__ blockDim;
-//dim3 __device_builtin__ __STORAGE__ gridDim;
-//int __device_builtin__ __STORAGE__ warpSize;
+ 
 __global__ void ForwardKernel(float* inputs, int inputSize, float* output, int outputSize, float* widths)
 {
     unsigned int widthIndex = (blockDim.x * blockIdx.x) + threadIdx.x;
@@ -69,164 +61,250 @@ int* CalctThreadsAndBlocks(int num) {
 
     cudaDeviceProp deviceProp;
     cudaGetDeviceProperties(&deviceProp, device);
+     
+    int* res = (int*)malloc(2 * sizeof(int));
+
     if (num <= deviceProp.maxThreadsPerBlock) {
-        int res[2] = {1,num};
-        return res;
+        res[0] = 1;
+        res[1] = num; 
+    } else { 
+        int threads = num % deviceProp.maxThreadsPerBlock;
+
+        //   t/N
+        res[0] = (((num - threads) / deviceProp.maxThreadsPerBlock) + 1);
+        res[1] = deviceProp.maxThreadsPerBlock+threads;
     }
-    int threads = num % deviceProp.maxThreadsPerBlock;
-    int res[2] = { ((num - threads) / deviceProp.maxThreadsPerBlock) + 1,threads};
+
+     
     return res;
 };
 
+
+
+
+
+
+
 __global__ void TestKernel()
 {
-    unsigned int index = (blockDim.x * blockIdx.x) + threadIdx.x;
+    int outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
+    int inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
 
-    printf("index: %d \n", index);
+    printf("outputIndex: %d ,inputIndex: %d \n", outputIndex, inputIndex);
+    //printf("index: %d \n", outputIndex * inputIndex);
+
 
 };
 
+
 int main()
 {
-    int miniBatchSize = 111;
-    // Set the dimensions of the CUDA grid and blocks
-    cudaDeviceProp prop;
-    cudaGetDeviceProperties(&prop, 0);  // Assuming device 0
-    int maxThreadsXx = prop.maxThreadsDim[0];
-    int blockDimX = maxThreadsXx;
-    int numBlocksX = (miniBatchSize + blockDimX - 1) / blockDimX;
 
-    printf("blockDimX: %d \n", blockDimX);
-    printf("numBlocksX: %d \n", numBlocksX);
+  /*  size_t inputSize = 2;
+    size_t outputSize = 3;*/
 
-    int inputsz = 5;
-    int outputsz = 5;
+    Channel chan = {};
+    AddOutputInput(&chan, 5);
+    AddOutputInput(&chan, 5);
+    AddOutputInput(&chan, 5);
 
 
-    int* siz = CalctThreadsAndBlocks(inputsz* outputsz);
+    float inputs[5] = { 1, 3,4,2,7 };
+    Inputs *forwardInputs = FloatToInputs(inputs, 5);
 
+    MakeFillAllocatedOutputs(&chan, 0.5);
 
-    int block = siz[0];
-    int threads = siz[1];
+    ForWards(&chan, forwardInputs);
+    /*size_t inputThredBalance = FindBalanceThread(inputSize);
+    size_t outputThredBalance = FindBalanceThread(outputSize);
+    printf("inputThredBalance: %zu\n", inputThredBalance);
+    printf("outputThredBalance: %zu\n", outputThredBalance);
 
+    dim3 blocksPerGrid(inputSize / inputThredBalance, outputSize / outputThredBalance);
+    dim3 threadsPerBlock(inputThredBalance, outputThredBalance);
+    TestKernel<<<blocksPerGrid, threadsPerBlock>>>();*/
 
-    TestKernel<<<block, threads>>>();
-
-    printf("block: %d \n", block);
-    printf("threads: %d \n", threads);
+    /*printf("block: %d \n", block);
+    printf("threads: %d \n", threads);*/
     return 0;
-     const int inputsize = 200000;
-     const int outputsize = 30000;
+
+ /*   int device;
+    cudaGetDevice(&device);
+
+    cudaDeviceProp deviceProp;
+    cudaGetDeviceProperties(&deviceProp, device);
 
 
-     float* input, *output, *widts, *biases;
-     cudaMalloc((void**)&input, inputsize * sizeof(float));
-     cudaMalloc((void**)&output, outputsize * sizeof(float));
-     cudaMalloc((void**)&widts, inputsize* outputsize * sizeof(float));
-     cudaMalloc((void**)&biases, outputsize * sizeof(float));
 
-     ////////////////////////////////////////////////////
-     cudaEvent_t start, stop;
-     cudaEventCreate(&start);
-     cudaEventCreate(&stop);
+    int inputSize = INT_MAX;
+    int outputSize = INT_MAX;*/
 
-     // Start recording the execution time
-     cudaEventRecord(start);
-     ////////////////////////////////////////////////////
+    
 
-     //(inputsize * outputsize)
+    //int miniBatchSize = 111;
+    //// Set the dimensions of the CUDA grid and blocks
+    //cudaDeviceProp prop;
+    //cudaGetDeviceProperties(&prop, 0);  // Assuming device 0
+    //int maxThreadsXx = prop.maxThreadsDim[0];
+    //int blockDimX = maxThreadsXx;
+    ////int numBlocksX = (miniBatchSize + blockDimX - 1) / blockDimX;
 
-     //ForwardKernel<<<(2147483647 * 50009001), 1 >> >(input, inputsize, output, outputsize, widts);
-     SigmoidKernel<<<1, outputsize>>>(output, biases);
-     ////////////////////////////////////////////////////
-      // Stop recording the execution time
-     cudaEventRecord(stop);
-     cudaEventSynchronize(stop);
+    //int ic = inputSize * outputSize;
 
-     // Calculate the elapsed time
-     float milliseconds = 0.0f;
-     cudaEventElapsedTime(&milliseconds, start, stop);
+    //int threadsPerBlockX = std::min(ic, prop.maxThreadsPerBlock);
+    //int numBlocksX = (ic + threadsPerBlockX - 1) / threadsPerBlockX;
 
-     // Print the kernel execution time
-     std::cout << "Kernel execution time: " << milliseconds << " ms" << std::endl;
+    //// Calculate the total number of threads
+    //int numThreads = numBlocksX * threadsPerBlockX;
 
-     // Destroy CUDA events
-     cudaEventDestroy(start);
-     cudaEventDestroy(stop);
-     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-     cudaEvent_t start2, stop2;
-     cudaEventCreate(&start2);
-     cudaEventCreate(&stop2);
-
-     // Start recording the execution time
-     cudaEventRecord(start2);
-     ////////////////////////////////////////////////////
-
-     JustForwardKernel<<<1, outputsize>>>(input, inputsize, output, outputsize, widts, biases);
-     ////////////////////////////////////////////////////
-      // Stop recording the execution time
-     cudaEventRecord(stop2);
-     cudaEventSynchronize(stop2);
-
-     // Calculate the elapsed time
-     float milliseconds2 = 0.0f;
-     cudaEventElapsedTime(&milliseconds2, start2, stop2);
-
-     // Print the kernel execution time
-     std::cout << "Kernel execution time22: " << milliseconds2 << " ms" << std::endl;
-
-     // Destroy CUDA events
-     cudaEventDestroy(start2);
-     cudaEventDestroy(stop2);
-
-     //////////////////////////////////////////////////// 
+    //printf("blockDimX: %d \n", blockDimX);
+    //printf("numBlocksX: %d \n", numBlocksX);
+    //dim3 blockSize(256,100);
+    //printf("blockSizeX: %d \n", blockSize.x);
+    //printf("blockSizeY: %d \n", blockSize.y);
+    //printf("blockSizeZ: %d \n", blockSize.z);
+    //
+    //int *siz = CalctThreadsAndBlocks(inputSize * outputSize);
 
 
-      
+    /*dim3 blocksPerGrid(inputSize, 1, 1);
+    dim3 threadsPerBlock(outputSize, 1, 1);*/
+    //dim3 threadsPerBlock(inputSize, outputSize);
+    //dim3 blocksPerGrid(1, 1);
+    //int maxThreads = deviceProp.maxThreadsPerBlock / 2;
+
+    //if ((inputSize * outputSize) > maxThreads) {
+    //    threadsPerBlock.x = maxThreads;
+    //    threadsPerBlock.y = maxThreads;
+    //    blocksPerGrid.x = ceil(double(inputSize) / double(threadsPerBlock.x));
+    //    blocksPerGrid.y = ceil(double(outputSize) / double(threadsPerBlock.y));
+    //}
+
+    ////
+    //printf("B %d \n", ceil(inputSize/ deviceProp.maxThreadsPerBlock));
+    ////printf("T %d \n", min(inputSize, outputSize));
+
+    //printf("RUN %d \n", (inputSize * outputSize));
+    //printf("threadsPerBlock: %d \n", threadsPerBlock.x);
+    //printf("threadsPerBlock: %d \n", threadsPerBlock.y);
+    //printf("blocksPerGrid: %d \n", blocksPerGrid.x);
+    //printf("BLOCK_SIZE: %d \n", BLOCK_SIZE);
+    /*dim3 blocksPerGrid(2);
+    dim3 threadsPerBlock(1024, 1024);*/ 
+
+    
+    // const int inputsize = 200000;
+    // const int outputsize = 30000;
 
 
-     int device;
-     cudaGetDevice(&device);
+    // float* input, *output, *widts, *biases;
+    // cudaMalloc((void**)&input, inputsize * sizeof(float));
+    // cudaMalloc((void**)&output, outputsize * sizeof(float));
+    // cudaMalloc((void**)&widts, inputsize* outputsize * sizeof(float));
+    // cudaMalloc((void**)&biases, outputsize * sizeof(float));
 
-     cudaDeviceProp devicePropp;
-     cudaGetDeviceProperties(&devicePropp, device);
+    // ////////////////////////////////////////////////////
+    // cudaEvent_t start, stop;
+    // cudaEventCreate(&start);
+    // cudaEventCreate(&stop);
 
-     // Get the maximum number of threads per block
-     int maxThreadsPerBlock = devicePropp.maxThreadsPerBlock;
+    // // Start recording the execution time
+    // cudaEventRecord(start);
+    // ////////////////////////////////////////////////////
 
-     // Get the maximum dimensions of the grid
-     //dim3 maxGridSize = devicePropp.maxGridSize;
+    // //(inputsize * outputsize)
+
+    // //ForwardKernel<<<(2147483647 * 50009001), 1 >> >(input, inputsize, output, outputsize, widts);
+    // SigmoidKernel<<<1, outputsize>>>(output, biases);
+    // ////////////////////////////////////////////////////
+    //  // Stop recording the execution time
+    // cudaEventRecord(stop);
+    // cudaEventSynchronize(stop);
+
+    // // Calculate the elapsed time
+    // float milliseconds = 0.0f;
+    // cudaEventElapsedTime(&milliseconds, start, stop);
+
+    // // Print the kernel execution time
+    // std::cout << "Kernel execution time: " << milliseconds << " ms" << std::endl;
+
+    // // Destroy CUDA events
+    // cudaEventDestroy(start);
+    // cudaEventDestroy(stop);
+    // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // cudaEvent_t start2, stop2;
+    // cudaEventCreate(&start2);
+    // cudaEventCreate(&stop2);
+
+    // // Start recording the execution time
+    // cudaEventRecord(start2);
+    // ////////////////////////////////////////////////////
+
+    // JustForwardKernel<<<1, outputsize>>>(input, inputsize, output, outputsize, widts, biases);
+    // ////////////////////////////////////////////////////
+    //  // Stop recording the execution time
+    // cudaEventRecord(stop2);
+    // cudaEventSynchronize(stop2);
+
+    // // Calculate the elapsed time
+    // float milliseconds2 = 0.0f;
+    // cudaEventElapsedTime(&milliseconds2, start2, stop2);
+
+    // // Print the kernel execution time
+    // std::cout << "Kernel execution time22: " << milliseconds2 << " ms" << std::endl;
+
+    // // Destroy CUDA events
+    // cudaEventDestroy(start2);
+    // cudaEventDestroy(stop2);
+
+    // //////////////////////////////////////////////////// 
 
 
-     // Get the maximum dimensions of the grid
-     int maxBlocksPerMultiprocessor;
-     cudaDeviceGetAttribute(&maxBlocksPerMultiprocessor, cudaDevAttrMaxBlocksPerMultiprocessor, device);
+    //  
 
-      
-    // printf("maxBlocksPerGrid123: %d\n", maxBlocksPerMultiprocessor);
 
-     //myKernel << <maxBlocksPerGrid, maxThreadsPerBlock >> > ();
+    // int device;
+    // cudaGetDevice(&device);
 
-     int deviceCount;
-     cudaGetDeviceCount(&deviceCount);
+    // cudaDeviceProp devicePropp;
+    // cudaGetDeviceProperties(&devicePropp, device);
 
-     if (deviceCount == 0) {
-         std::cerr << "No CUDA devices found" << std::endl;
-         return 1;
-     }
+    // // Get the maximum number of threads per block
+    // int maxThreadsPerBlock = devicePropp.maxThreadsPerBlock;
 
-     for (int deviceId = 0; deviceId < deviceCount; ++deviceId) {
-         cudaDeviceProp deviceProp;
-         cudaGetDeviceProperties(&deviceProp, deviceId);
+    // // Get the maximum dimensions of the grid
+    // //dim3 maxGridSize = devicePropp.maxGridSize;
 
-         std::cout << "Device ID: " << deviceId << std::endl;
-         std::cout << "Device Name: " << deviceProp.name << std::endl;
-         std::cout << "Max Blocks per SM: " << deviceProp.maxBlocksPerMultiProcessor << std::endl;
-         std::cout << "Max Threads per Block: " << deviceProp.maxThreadsPerBlock << std::endl;
-         std::cout << "Max Threads per SM: " << deviceProp.maxThreadsPerMultiProcessor << std::endl;
-         std::cout << "Max Grid Size (x, y, z): " << deviceProp.maxGridSize[0] << ", " << deviceProp.maxGridSize[1]
-             << ", " << deviceProp.maxGridSize[2] << std::endl;
-         std::cout << std::endl;
-    }
-    return 0;
+
+    // // Get the maximum dimensions of the grid
+    // int maxBlocksPerMultiprocessor;
+    // cudaDeviceGetAttribute(&maxBlocksPerMultiprocessor, cudaDevAttrMaxBlocksPerMultiprocessor, device);
+
+    //  
+    //// printf("maxBlocksPerGrid123: %d\n", maxBlocksPerMultiprocessor);
+
+    // //myKernel << <maxBlocksPerGrid, maxThreadsPerBlock >> > ();
+
+    // int deviceCount;
+    // cudaGetDeviceCount(&deviceCount);
+
+    // if (deviceCount == 0) {
+    //     std::cerr << "No CUDA devices found" << std::endl;
+    //     return 1;
+    // }
+
+    // for (int deviceId = 0; deviceId < deviceCount; ++deviceId) {
+    //     cudaDeviceProp deviceProp;
+    //     cudaGetDeviceProperties(&deviceProp, deviceId);
+
+    //     std::cout << "Device ID: " << deviceId << std::endl;
+    //     std::cout << "Device Name: " << deviceProp.name << std::endl;
+    //     std::cout << "Max Blocks per SM: " << deviceProp.maxBlocksPerMultiProcessor << std::endl;
+    //     std::cout << "Max Threads per Block: " << deviceProp.maxThreadsPerBlock << std::endl;
+    //     std::cout << "Max Threads per SM: " << deviceProp.maxThreadsPerMultiProcessor << std::endl;
+    //     std::cout << "Max Grid Size (x, y, z): " << deviceProp.maxGridSize[0] << ", " << deviceProp.maxGridSize[1]
+    //         << ", " << deviceProp.maxGridSize[2] << std::endl;
+    //     std::cout << std::endl;
+    //}
+    //return 0;
 }
