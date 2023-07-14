@@ -55,77 +55,51 @@ __global__ void JustForwardKernel(float* inputs, int inputSize, float* outputs, 
     //printf("output: %.2f\n", outputs[outputIndex]);
 };
 
-int* CalctThreadsAndBlocks(int num) {
-    int device;
-    cudaGetDevice(&device);
-
-    cudaDeviceProp deviceProp;
-    cudaGetDeviceProperties(&deviceProp, device);
-     
-    int* res = (int*)malloc(2 * sizeof(int));
-
-    if (num <= deviceProp.maxThreadsPerBlock) {
-        res[0] = 1;
-        res[1] = num; 
-    } else { 
-        int threads = num % deviceProp.maxThreadsPerBlock;
-
-        //   t/N
-        res[0] = (((num - threads) / deviceProp.maxThreadsPerBlock) + 1);
-        res[1] = deviceProp.maxThreadsPerBlock+threads;
-    }
-
-     
-    return res;
-};
+ 
 
 
 
 
-
-
-
-__global__ void TestKernel()
-{
-    int outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
-    int inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
-
-    printf("outputIndex: %d ,inputIndex: %d \n", outputIndex, inputIndex);
-    //printf("index: %d \n", outputIndex * inputIndex);
-
-
-};
+ 
 
 
 int main()
-{
-
-  /*  size_t inputSize = 2;
-    size_t outputSize = 3;*/
+{ 
 
     Channel chan = {};
     AddOutputInput(&chan, 5);
-    AddOutputInput(&chan, 5);
-    AddOutputInput(&chan, 5);
+    AddOutputInput(&chan, 5); 
 
 
-    float inputs[5] = { 1, 3,4,2,7 };
-    Inputs *forwardInputs = FloatToInputs(inputs, 5);
+    float inputs[5] = {1,3,4,2,7};   
+   // Inputs* forwardInputs = FloatToInputs(inputs, 5);
+    Inputs forwardIn = FloatToInputs(inputs, 5);
+    Inputs* forwardInputs = &forwardIn;
 
-    MakeFillAllocatedOutputs(&chan, 0.5);
-
+    MakeFillAllocatedOutputs(&chan, 0);
+     
+     
     ForWards(&chan, forwardInputs);
-    /*size_t inputThredBalance = FindBalanceThread(inputSize);
-    size_t outputThredBalance = FindBalanceThread(outputSize);
-    printf("inputThredBalance: %zu\n", inputThredBalance);
-    printf("outputThredBalance: %zu\n", outputThredBalance);
 
-    dim3 blocksPerGrid(inputSize / inputThredBalance, outputSize / outputThredBalance);
-    dim3 threadsPerBlock(inputThredBalance, outputThredBalance);
-    TestKernel<<<blocksPerGrid, threadsPerBlock>>>();*/
+    cudaError_t cudaStatus;
 
-    /*printf("block: %d \n", block);
-    printf("threads: %d \n", threads);*/
+
+
+
+
+
+
+
+
+
+
+    cudaStatus = cudaGetLastError();
+    printf("ERROR: %d\n", cudaStatus != cudaSuccess);
+    if (cudaStatus != cudaSuccess) {
+        fprintf(stderr, "CUDA Error: %s\n", cudaGetErrorString(cudaStatus));
+        // Handle or report the error appropriately
+    }
+   
     return 0;
 
  /*   int device;

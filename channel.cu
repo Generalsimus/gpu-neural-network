@@ -1,4 +1,4 @@
-
+#include "utils.cu"
 #include "connects.cu"
 #include "inputs.cu"
 #include <cuda_runtime.h>
@@ -21,7 +21,7 @@ void ForWards(Channel* chan, Inputs* forwardInput)
         Connects connect = chan->allocatedConnects[connectIndex];
         Inputs outputs = chan->allocatedOutputs[connectIndex];
 
-       ForwardSum<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->count, outputs.allocatedInputs, outputs.count, connect.widths);
+       ForwardSum<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths);
        *forwardInput = outputs;
     }
 };
@@ -31,6 +31,7 @@ void MakeFillAllocatedOutputs(Channel* chan, float defaultValue)
     {
         Inputs outputs = chan->allocatedOutputs[connectIndex];
 
+        printf("III: %d\n", connectIndex);
         FillInputsDefaultValue(&outputs, defaultValue);
     }
 }
@@ -45,9 +46,8 @@ void AddOutputInput(Channel* chan, size_t inputSize)
 
 
 
+
         chan->allocatedConnects = AddElement(chan->allocatedConnects, index, NewConnection(chan->outputLayerSize, inputSize));
-
-
 
         chan->allocatedOutputs = AddElement(chan->allocatedOutputs, index, NewInputs(inputSize));
         

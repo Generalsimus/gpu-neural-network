@@ -68,6 +68,8 @@ __global__ void AllocateArrayInGpuWithDefaultValue(F* inputs, size_t* size, F* d
 
     inputs[inputIndex] = *defaultNum;
 
+   // printf("DDD Float value: %d\n", inputIndex);
+    ///printf("Fill Float value: %f\n", inputs[inputIndex]);
     // printf("Fill Float value: %f\n", inputs[inputIndex]);
 }
 
@@ -89,3 +91,12 @@ size_t FindBalanceThread(size_t num)
 
     return 1;
 };
+
+#define CUDA_CHECK(call)                                                         \
+    do {                                                                         \
+        cudaError_t cudaStatus = call;                                           \
+        if (cudaStatus != cudaSuccess) {                                         \
+            fprintf(stderr, "CUDA Error: %s (line %d): %s\n", cudaGetErrorString(cudaStatus), __LINE__, __FILE__); \
+            exit(1);                                                             \
+        }                                                                        \
+    } while(0)
