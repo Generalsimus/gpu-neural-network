@@ -68,7 +68,7 @@ int main()
 
     Channel chan = {};
     AddOutputInput(&chan, 5);
-    AddOutputInput(&chan, 5); 
+    AddOutputInput(&chan, 3); 
 
 
     float inputs[5] = {1,3,4,2,7};   
@@ -82,6 +82,8 @@ int main()
     ForWards(&chan, forwardInputs);
 
     cudaError_t cudaStatus;
+
+    LogInput(forwardInputs);
 
 
 

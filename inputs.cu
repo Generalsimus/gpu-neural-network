@@ -5,6 +5,7 @@ typedef struct Inputs
 {
     float* allocatedInputs;
     size_t* size;
+
     dim3 blocksPerGrid;
     dim3 threadsPerBlock;
 } Inputs;
@@ -26,15 +27,7 @@ void FillInputsDefaultValue(Inputs* inputs, float defaultValue)
     cudaMemcpy(&inputSize, inputs->size, sizeof(size_t), cudaMemcpyDeviceToHost);
     /////////////////////////////////////////////////////////////
 
-    size_t thredBalance = FindBalanceThread(inputSize);
-
-
-    dim3 blocksPerGrid(inputSize / thredBalance);
-    dim3 threadsPerBlock(thredBalance);
-    printf("blocksPerGrid: %d \n", inputSize / thredBalance);
-    printf("threadsPerBlock: %d \n", thredBalance);
-
-    AllocateArrayInGpuWithDefaultValue<<<blocksPerGrid, threadsPerBlock>>>(inputs->allocatedInputs, inputs->size, defaultValueDevice);
+    AllocateArrayInGpuWithDefaultValue<<<inputs->blocksPerGrid, inputs->threadsPerBlock>>>(inputs->allocatedInputs, inputs->size, defaultValueDevice);
     /////////////////////////////////////////////////////////////
 };
 
@@ -50,24 +43,19 @@ Inputs NewInputs(size_t size)
 
     cudaMalloc((void**)&inputDevice, size * sizeof(float));
     ////////////////////////////////
-   // size_t thredBalance = FindBalanceThread(sizeDevice);
-    /*ize_t thredBalance = FindBalanceThread(sizeDevice);
+    size_t thredBalance = FindBalanceThread(size);
+     
 
-    dim3 blocksPerGrid(sizeDevice / thredBalance);
-    dim3 threadsPerBlock(thredBalance); */
+    dim3 blocksPerGrid(size / thredBalance);
+    dim3 threadsPerBlock(thredBalance); 
     ////////////////////////////////
     Inputs input = {
         inputDevice,
         sizeDevice,
-       /* blocksPerGrid,
-        threadsPerBlock,*/
+        blocksPerGrid,
+        threadsPerBlock, 
     };
-
-
-
-
-
-    //FillInputsDefaultValue(&input, 0.5);
+     
     /////////////////////////////////
 
     return input;
@@ -88,9 +76,22 @@ Inputs FloatToInputs(float* inputs,const size_t size)
 
     cudaMemcpy(inputDevice, inputs, size * sizeof(float), cudaMemcpyHostToDevice);
     ////////////////////////////////
+    size_t thredBalance = FindBalanceThread(size);
+
+
+    dim3 blocksPerGrid(size / thredBalance);
+    dim3 threadsPerBlock(thredBalance);
+    ////////////////////////////////
     Inputs input = {
         inputDevice,
         sizeDevice,
+        blocksPerGrid,
+        threadsPerBlock,
     }; 
     return input;
+};
+
+void LogInput(Inputs* inputs) {
+
+     LogGpuFloatArray<<<inputs->blocksPerGrid, inputs->threadsPerBlock>>>(inputs->allocatedInputs, inputs->size);
 };

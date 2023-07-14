@@ -4,7 +4,6 @@
 #include <iostream>
 
 
-
 float* AllocateGpuFloatArray(int size)
 {
     //  float* input = (float*)malloc(size * sizeof(float));
@@ -63,15 +62,16 @@ T* AddElement(T* array, size_t size, T element)
 
 template<typename F>
 __global__ void AllocateArrayInGpuWithDefaultValue(F* inputs, size_t* size, F* defaultNum)
-{ 
+{
     size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
 
     inputs[inputIndex] = *defaultNum;
 
-   // printf("DDD Float value: %d\n", inputIndex);
-    ///printf("Fill Float value: %f\n", inputs[inputIndex]);
-    // printf("Fill Float value: %f\n", inputs[inputIndex]);
-}
+    // printf("DDD Float value: %d\n", inputIndex);
+     ///printf("Fill Float value: %f\n", inputs[inputIndex]);
+     // printf("Fill Float value: %f\n", inputs[inputIndex]);
+};
+ 
 
 
 size_t FindBalanceThread(size_t num)
@@ -100,3 +100,22 @@ size_t FindBalanceThread(size_t num)
             exit(1);                                                             \
         }                                                                        \
     } while(0)
+
+__global__ void LogGpuFloatArray(float* inputs, size_t* size)
+{
+    size_t index = blockIdx.x * blockDim.x + threadIdx.x;
+    
+
+    if (index == 0) {
+        printf("[ %.10f", inputs[index]);
+    }
+    else {
+        printf(", %.10f", inputs[index]);
+    }
+
+    if (index == (*size - 1)) {
+
+        printf(" ]\n");
+    }
+}
+

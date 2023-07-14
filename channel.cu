@@ -22,6 +22,9 @@ void ForWards(Channel* chan, Inputs* forwardInput)
         Inputs outputs = chan->allocatedOutputs[connectIndex];
 
        ForwardSum<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths);
+
+       ForwardSigmoid<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, connect.biases);
+       
        *forwardInput = outputs;
     }
 };
