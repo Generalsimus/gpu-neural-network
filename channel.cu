@@ -14,6 +14,21 @@ typedef struct Channel
  
 
 void ForWards(Channel* chan, Inputs* forwardInput)
+{
+    for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
+    {
+        printf("connectIndex: %d \n", connectIndex);
+        Connects connect = chan->allocatedConnects[connectIndex];
+        Inputs outputs = chan->allocatedOutputs[connectIndex];
+
+        ForwardSum << <connect.blocksPerGrid, connect.threadsPerBlock >> > (forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths);
+
+        ForwardSigmoid << <outputs.blocksPerGrid, outputs.threadsPerBlock >> > (outputs.allocatedInputs, connect.biases);
+
+        *forwardInput = outputs;
+    }
+};
+void Train(Channel* chan, Inputs* forwardInput)
 { 
     for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
     {

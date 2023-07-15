@@ -31,7 +31,7 @@ __global__ void ForwardSigmoid(float* outputs, float* biases) {
 
 
 
-__global__ void Train(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths) {
+__global__ void Train(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths, float* biases) {
     size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
     size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
     size_t widthIndex = inputIndex * *outputsSize + outputIndex;
