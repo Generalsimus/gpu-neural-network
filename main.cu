@@ -56,15 +56,13 @@ __global__ void JustForwardKernel(float* inputs, int inputSize, float* outputs, 
 };
 
  
-
-
-
-
  
 
+ 
+//unsigned
 
 int main()
-{ 
+{
 
     Channel chan = {};
     AddOutputInput(&chan, 5);
