@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-float* AllocateGpuFloatArray(int size)
+float* AllocateGpuFloatArray(size_t size)
 {
     //  float* input = (float*)malloc(size * sizeof(float));
 

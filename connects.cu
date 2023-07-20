@@ -14,39 +14,40 @@ typedef struct Connects
 
 
 __global__ void ForwardSum(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths) {
-     size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
-     size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
-     size_t widthIndex = inputIndex * *outputsSize + outputIndex;
-
-      
-
-     outputs[outputIndex] += inputs[inputIndex] * widths[widthIndex];
-}
-
-__global__ void ForwardSigmoid(float* outputs, float* biases) { 
-    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
-
-    outputs[outputIndex] = 1.0f / (1.0f + expf(-(outputs[outputIndex] + biases[outputIndex])));
-}
-
-
-
-__global__ void Train(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths, float* biases) {
     size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
     size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
     size_t widthIndex = inputIndex * *outputsSize + outputIndex;
 
 
-}
+
+    outputs[outputIndex] += inputs[inputIndex] * widths[widthIndex];
+};
+
+__global__ void ForwardSigmoid(float* outputs, float* biases) {
+    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    outputs[outputIndex] = 1.0f / (1.0f + expf(-(outputs[outputIndex] + biases[outputIndex])));
+};
 
 
-//__global__ void Train(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths, float* biases) {
-//    size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
-//    size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
-//    size_t widthIndex = inputIndex * *outputsSize + outputIndex;
-//
-//
-//}
+
+__global__ void TrainError(float* outputs, float* desiredOutputs, float* errorAs) {
+    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    float output = outputs[outputIndex];
+
+    errorAs[outputIndex] = (desiredOutputs[outputIndex] - output) * (output * (1 - output));
+};
+
+__global__ void TrainUpdateWidths(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths, float* biases, float* deltas, float* deltasOutputs) {
+    size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
+    size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+    size_t widthIndex = inputIndex * *outputsSize + outputIndex;
+
+
+     
+};
+
 
 
 Connects NewConnection(size_t inputSize, size_t outputSize)
