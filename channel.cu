@@ -13,25 +13,48 @@ typedef struct Channel
 } Channel;
  
 
-void ForWards(Channel* chan, Inputs* forwardInput)
+Inputs ForWardAfterIndex(Channel* chan, Inputs* forwardInput, int chanIndex)
 {
-    for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
-    {
-        printf("connectIndex: %d \n", connectIndex);
-        Connects connect = chan->allocatedConnects[connectIndex];
-        Inputs outputs = chan->allocatedOutputs[connectIndex];
+    if (chanIndex > (chan->layersCount - 2)) {
+        printf("Train Error: Channel max size is %d (line %d): %s\n", (chan->layersCount - 1), __LINE__, __FILE__);
+    };
 
-        ForwardSum<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths);
+    Connects connect = chan->allocatedConnects[chanIndex];
+    Inputs outputs = chan->allocatedOutputs[chanIndex];
+    /////////////////////////////////////////////////////////////////////////////////////
 
-        ForwardSigmoid<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, connect.biases);
+    ForwardSum<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths);
 
-        *forwardInput = outputs;
+  /*  LogInput(forwardInput);
+    LogInput(&outputs);*/
+    ForwardSigmoid<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, connect.biases);
+
+    //printf("FORWARDINDEX: %d %d \n", chanIndex, (chan->layersCount - 2));
+
+  /* if (chanIndex == 0) {
+        printf("START\n ");
+        LogInput(forwardInput);
+        printf("END\n ");
+    }*/
+
+    if (chanIndex == (chan->layersCount - 2)) {
+
+        //LogInput(&outputs);
+        return outputs;
     }
+    else {
+        return ForWardAfterIndex(chan, &outputs, (chanIndex + 1));
+    }
+}
+
+Inputs ForWards(Channel* chan, Inputs* forwardInput)
+{
+    return ForWardAfterIndex(chan, forwardInput, 0);
 };
 
-float* TrainAfterIndex(Channel* chan, Inputs* forwardInput, Inputs* desiredOutputs, float learnRate,int chanIndex)
+float* TrainAfterIndex(Channel* chan, Inputs* forwardInput, Inputs* desiredOutputs, float* learnRate, int chanIndex)
 {
-    if (chanIndex > (chan->layersCount - 1)) {
+    if (chanIndex > (chan->layersCount - 2)) {
         printf("Train Error: Channel max size is %d (line %d): %s\n", (chan->layersCount - 1), __LINE__, __FILE__);
     };
     Connects connect = chan->allocatedConnects[chanIndex];
@@ -51,64 +74,63 @@ float* TrainAfterIndex(Channel* chan, Inputs* forwardInput, Inputs* desiredOutpu
 
     cudaMemcpy(&inputsSize, forwardInput->size, sizeof(size_t), cudaMemcpyDeviceToHost);
     /////////////////////////////////////////////////////////////////////////////////////
-   
+
+    /*if (chanIndex==0) {
+        printf("START\n ");
+        LogInput(forwardInput);
+        printf("END\n ");
+    } */
+   // printf("EDEEEEEEEEE: %d \n\n", chanIndex);
+
     if (chanIndex == (chan->layersCount - 2)) {
         float* deltas = AllocateGpuFloatArray(outputsSize);
+        //printf("TRAINT ENDOF\n\n");
+
         TrainError<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, desiredOutputs->allocatedInputs, deltas);
 
+
+        //ForwardSigmoidDerivative<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.a);
+   
         float* deltasOutputs = AllocateGpuFloatArray(inputsSize);
 
+        //LogGpuFloatArray << <forwardInput->blocksPerGrid, forwardInput->threadsPerBlock >> > (connect.widths, forwardInput->size);
 
-        TrainUpdateWidths<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths, connect.biases, deltas, deltasOutputs);
-
+        TrainUpdateWidths<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths, connect.biases, deltas, deltasOutputs, learnRate);
+        
+        //LogGpuFloatArray<<<forwardInput->blocksPerGrid, forwardInput->threadsPerBlock>>>(connect.widths, forwardInput->size);
+        cudaFree(deltas);
         return deltasOutputs;
     }
-    else { 
+    else {
         float* deltas = TrainAfterIndex(chan, &outputs, desiredOutputs, learnRate, (chanIndex + 1));
+        
+        ForwardSigmoidDerivative<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, deltas);
 
         float* deltasOutputs = AllocateGpuFloatArray(inputsSize);
+        //LogGpuFloatArray<<<forwardInput->blocksPerGrid, forwardInput->threadsPerBlock>>>(connect.widths, forwardInput->size);
 
-        TrainUpdateWidths<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths, connect.biases, deltas, deltasOutputs);
+        TrainUpdateWidths<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths, connect.biases, deltas, deltasOutputs, learnRate);
+        
+        //LogGpuFloatArray<<<forwardInput->blocksPerGrid, forwardInput->threadsPerBlock>>>(connect.widths, forwardInput->size);
+        cudaFree(deltas);
         return deltasOutputs;
     }
 
 }
 void Train(Channel* chan, Inputs* forwardInput, Inputs* desiredOutputs, float learnRate)
-{ 
-    float* deltas;
-    //inputs[]float64, desiredOutputs[]float64, learnRate float64
-    for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
-    {
-        printf("connectIndex: %d \n", connectIndex);
-        Connects connect = chan->allocatedConnects[connectIndex];
-        Inputs outputs = chan->allocatedOutputs[connectIndex];
+{
 
-       ForwardSum<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths);
+    float* learnRateGpu;
 
-       ForwardSigmoid<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, connect.biases);
-        
-       *forwardInput = outputs;
-    }
+    cudaMalloc((void**)&learnRateGpu, sizeof(float));
 
-    for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
-    {
-    }
+    cudaMemcpy(learnRateGpu, &learnRate, sizeof(int), cudaMemcpyHostToDevice);
 
-    //if (connectIndex == (chan->layersCount - 2)) {
-    //    size_t outputsSize;
 
-    //    cudaMemcpy(&outputsSize, outputs.size, sizeof(size_t), cudaMemcpyDeviceToHost);
+    float* deltas = TrainAfterIndex(chan, forwardInput, desiredOutputs, learnRateGpu, 0);
 
-    //    float* newDelta;
-    //    cudaMalloc((void**)&newDelta, outputsSize * sizeof(float));
-
-    //    //float* outputs, float* desiredOutputs, float* errorAs
-    //    TrainError << <outputs.blocksPerGrid, outputs.threadsPerBlock >> > (outputs.allocatedInputs, desiredOutputs.allocatedInputs, newDelta);
-
-    //}
-    //else {
-
-    //}
+    cudaFree(deltas);
+    cudaFree(learnRateGpu);
 };
 
 void MakeFillAllocatedOutputs(Channel* chan, float defaultValue)
@@ -117,7 +139,7 @@ void MakeFillAllocatedOutputs(Channel* chan, float defaultValue)
     {
         Inputs outputs = chan->allocatedOutputs[connectIndex];
 
-        printf("III: %d\n", connectIndex);
+       // printf("III: %d\n", connectIndex);
         FillInputsDefaultValue(&outputs, defaultValue);
     }
 }
@@ -125,17 +147,17 @@ void MakeFillAllocatedOutputs(Channel* chan, float defaultValue)
 void AddOutputInput(Channel* chan, size_t inputSize)
 {
     size_t layersCount = chan->layersCount;
-    printf("layersCount: %d \n", layersCount);
+   // printf("layersCount: %d \n", layersCount);
      
     if (layersCount > 0) {
-        size_t index = layersCount - 1;
+        size_t connectsCount = layersCount - 1;
 
 
 
 
-        chan->allocatedConnects = AddElement(chan->allocatedConnects, index, NewConnection(chan->outputLayerSize, inputSize));
+        chan->allocatedConnects = AddElement(chan->allocatedConnects, connectsCount, NewConnection(chan->outputLayerSize, inputSize));
 
-        chan->allocatedOutputs = AddElement(chan->allocatedOutputs, index, NewInputs(inputSize));
+        chan->allocatedOutputs = AddElement(chan->allocatedOutputs, connectsCount, NewInputs(inputSize));
         
 
     };

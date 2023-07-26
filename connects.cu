@@ -30,22 +30,41 @@ __global__ void ForwardSigmoid(float* outputs, float* biases) {
 };
 
 
+__global__ void ForwardSigmoidDerivative(float* inputs, float* deltas) {
+    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    float input = inputs[outputIndex];
+
+    outputs[outputIndex] = deltas[outputIndex] * (output * (1 - output));
+};
+
+
 
 __global__ void TrainError(float* outputs, float* desiredOutputs, float* errorAs) {
     size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
 
+  //  printf("outputIndexxxx: %d \n", outputIndex);
     float output = outputs[outputIndex];
 
-    errorAs[outputIndex] = (desiredOutputs[outputIndex] - output) * (output * (1 - output));
+    errorAs[outputIndex] = (desiredOutputs[outputIndex] - output) * (output * (1 - output));;
+
+   // printf("errorAs[outputIndex]: %.5f : %.5f : %.5f \n", desiredOutputs[outputIndex], output, (desiredOutputs[outputIndex] - output) * (output * (1 - output)));
 };
 
-__global__ void TrainUpdateWidths(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths, float* biases, float* deltas, float* deltasOutputs) {
+__global__ void TrainUpdateWidths(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths, float* biases, float* deltas, float* deltasOutputs, float* learnRate) {
     size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
     size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
     size_t widthIndex = inputIndex * *outputsSize + outputIndex;
 
 
-     
+    //printf("widths1: %.5f \n", widths[widthIndex]);
+
+    widths[widthIndex] += (deltas[outputIndex] * *learnRate * inputs[inputIndex]);
+
+
+    //printf("widths2: %.5f \n", widths[widthIndex]);
+
+    deltasOutputs[inputIndex] += (deltas[outputIndex] * widths[widthIndex]);
 };
 
 

@@ -3,20 +3,28 @@
 #include <stdio.h>
 #include <iostream>
 
+#define CUDA_CHECK(call)                                                         \
+    do {                                                                         \
+        cudaError_t cudaStatus = call;                                           \
+        if (cudaStatus != cudaSuccess) {                                         \
+            fprintf(stderr, "CUDA Error: %s (line %d): %s\n", cudaGetErrorString(cudaStatus), __LINE__, __FILE__); \
+            exit(1);                                                             \
+        }                                                                        \
+    } while(0)
 
 float* AllocateGpuFloatArray(size_t size)
 {
     //  float* input = (float*)malloc(size * sizeof(float));
 
-    float* d_input;
+    float* values;
+    //printf("EEEE: %d \n",size);
 
-    cudaMalloc((void**)&d_input, size * sizeof(float));
-
+    CUDA_CHECK(cudaMalloc((void**)&values, size * sizeof(float)));
     // cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
 
    //  free(input);
 
-    return d_input;
+    return values;
 };
 
 
@@ -92,22 +100,14 @@ size_t FindBalanceThread(size_t num)
     return 1;
 };
 
-#define CUDA_CHECK(call)                                                         \
-    do {                                                                         \
-        cudaError_t cudaStatus = call;                                           \
-        if (cudaStatus != cudaSuccess) {                                         \
-            fprintf(stderr, "CUDA Error: %s (line %d): %s\n", cudaGetErrorString(cudaStatus), __LINE__, __FILE__); \
-            exit(1);                                                             \
-        }                                                                        \
-    } while(0)
 
 __global__ void LogGpuFloatArray(float* inputs, size_t* size)
 {
     size_t index = blockIdx.x * blockDim.x + threadIdx.x;
-    
+
 
     if (index == 0) {
-        printf("[ %.10f", inputs[index]);
+        printf("\n[ %.10f", inputs[index]);
     }
     else {
         printf(", %.10f", inputs[index]);
@@ -117,5 +117,26 @@ __global__ void LogGpuFloatArray(float* inputs, size_t* size)
 
         printf(" ]\n");
     }
+}
+
+
+
+float* NormalizeDeltas(float* inputs, size_t size)
+{ 
+    float maxValue = 0.0f;
+
+    for (size_t i = 1; i < size; i++) {
+        if (inputs[i] > maxValue) {
+            maxValue = inputs[i];
+        }
+    }
+
+    float* normalizedDeltas = (float*)malloc(size * sizeof(float));
+
+    for (size_t i = 0; i < size; i++) {
+        normalizedDeltas[i] = (inputs[i] / maxValue);
+    }
+     
+    return normalizedDeltas;
 }
 
