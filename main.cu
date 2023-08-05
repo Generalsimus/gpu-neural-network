@@ -66,13 +66,13 @@ int main()
 
     float floatmin = FLT_MIN;
 
-    printf("Minimal float value: %.100f \n", FLT_MIN);
+    printf("Minimal float value: %.100f \n", FLT_MAX);
     printf("Size of float variable: %zu bytes\n", sizeof(FLT_MIN));
 
     Channel chan = {};
 
     AddOutputInput(&chan, 5);
-    AddOutputInput(&chan, 100);
+    AddOutputInput(&chan, 5);
     AddOutputInput(&chan, 3);
 
 
@@ -102,23 +102,25 @@ int main()
     Inputs trainDesiredOutputsForwardIn2 = FloatToInputs(trainDesiredOutputs2, 3);
     ////////////////////////////////////
 
-    for (int i = 0; i < 5000; i++) {
-        MakeFillAllocatedOutputs(&chan, 0);
-        Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 0.2);
-       // printf("INDDTRდ: %d \n", i);/*
-        MakeFillAllocatedOutputs(&chan, 0);
-        Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 0.2); 
-    };
+    //for (int i = 0; i < 5; i++) {
+    //    MakeFillAllocatedOutputs(&chan, 0);
+    //    Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 1);
+    //   // printf("INDDTRდ: %d \n", i);/*
+    //    MakeFillAllocatedOutputs(&chan, 0);
+    //    Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 1); 
+    //};
+    //Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 1);
 
+    Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 1);
     MakeFillAllocatedOutputs(&chan, 0);
     Inputs forwardResult3 = ForWards(&chan, &forwardIn);
     LogInput(&forwardResult3);
 
 
     ////////////////////////////////////////////
-    MakeFillAllocatedOutputs(&chan, 0);
-    Inputs forwardResult4 = ForWards(&chan, &forwardIn2);
-    LogInput(&forwardResult4);
+    //MakeFillAllocatedOutputs(&chan, 0);
+    //Inputs forwardResult4 = ForWards(&chan, &forwardIn2);
+    //LogInput(&forwardResult4);
 
 
 

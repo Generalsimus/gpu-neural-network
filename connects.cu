@@ -13,6 +13,18 @@ typedef struct Connects
 } Connects;
 
 
+
+__global__ void ForwardTanh(float* outputs, float* biases) {
+    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    float value = outputs[outputIndex] + biases[outputIndex];
+    
+    outputs[outputIndex] = (expf(value) - expf(-value)) / (expf(value) + expf(-value));
+};
+
+
+
+
 __global__ void ForwardSum(float* inputs, size_t* inputsSize, float* outputs, size_t* outputsSize, float* widths) {
     size_t outputIndex = blockIdx.y * blockDim.y + threadIdx.y;
     size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
@@ -35,7 +47,7 @@ __global__ void ForwardSigmoidDerivative(float* inputs, float* deltas) {
 
     float input = inputs[outputIndex];
 
-    outputs[outputIndex] = deltas[outputIndex] * (output * (1 - output));
+    deltas[outputIndex] = deltas[outputIndex] * (input * (1 - input));
 };
 
 
@@ -46,7 +58,7 @@ __global__ void TrainError(float* outputs, float* desiredOutputs, float* errorAs
   //  printf("outputIndexxxx: %d \n", outputIndex);
     float output = outputs[outputIndex];
 
-    errorAs[outputIndex] = (desiredOutputs[outputIndex] - output) * (output * (1 - output));;
+    errorAs[outputIndex] = (desiredOutputs[outputIndex] - output) * (output * (1 - output));
 
    // printf("errorAs[outputIndex]: %.5f : %.5f : %.5f \n", desiredOutputs[outputIndex], output, (desiredOutputs[outputIndex] - output) * (output * (1 - output)));
 };
@@ -59,7 +71,7 @@ __global__ void TrainUpdateWidths(float* inputs, size_t* inputsSize, float* outp
 
     //printf("widths1: %.5f \n", widths[widthIndex]);
 
-    widths[widthIndex] += (deltas[outputIndex] * *learnRate * inputs[inputIndex]);
+    widths[widthIndex] -= (deltas[outputIndex] * *learnRate * inputs[inputIndex]);
 
 
     //printf("widths2: %.5f \n", widths[widthIndex]);
