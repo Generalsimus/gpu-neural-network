@@ -67,22 +67,26 @@ float* TrainAfterIndex(Channel* chan, Inputs* forwardInput, Inputs* desiredOutpu
     ForwardSigmoid<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, connect.biases);
 
     /////////////////////////////////////////////////////////////////////////////////////
-    size_t outputsSize;
+    size_t outputsSize = InputSize(&outputs);
 
-    cudaMemcpy(&outputsSize, outputs.size, sizeof(size_t), cudaMemcpyDeviceToHost);
 
-    size_t inputsSize;
-
-    cudaMemcpy(&inputsSize, forwardInput->size, sizeof(size_t), cudaMemcpyDeviceToHost);
+    size_t inputsSize = InputSize(forwardInput); 
     /////////////////////////////////////////////////////////////////////////////////////
 
+    //if (chanIndex == 0) {
+
+        //LogInput(forwardInput);
+    //}
 
     if (chanIndex == (chan->layersCount - 2)) {
         float* deltas = AllocateGpuFloatArray(outputsSize); 
 
+        LogError(&outputs, desiredOutputs->allocatedInputs);
+        
         TrainError<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, desiredOutputs->allocatedInputs, deltas);
-         
-   
+        
+        ForwardSigmoidDerivative<<<outputs.blocksPerGrid, outputs.threadsPerBlock>>>(outputs.allocatedInputs, deltas);
+
         float* deltasOutputs = AllocateGpuFloatArray(inputsSize);
 
         TrainUpdateWidths<<<connect.blocksPerGrid, connect.threadsPerBlock>>>(forwardInput->allocatedInputs, forwardInput->size, outputs.allocatedInputs, outputs.size, connect.widths, connect.biases, deltas, deltasOutputs, learnRate);
@@ -128,10 +132,9 @@ void MakeFillAllocatedOutputs(Channel* chan, float defaultValue)
     for (int connectIndex = 0; connectIndex < (chan->layersCount - 1); connectIndex++)
     {
         Inputs outputs = chan->allocatedOutputs[connectIndex];
-
-       // printf("III: %d\n", connectIndex);
-        FillInputsDefaultValue(&outputs, defaultValue);
-        //LogInput(&outputs);
+         
+       FillInputsDefaultValue(&outputs, defaultValue);
+       
     }
 }
 

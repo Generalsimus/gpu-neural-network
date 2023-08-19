@@ -10,7 +10,58 @@
             fprintf(stderr, "CUDA Error: %s (line %d): %s\n", cudaGetErrorString(cudaStatus), __LINE__, __FILE__); \
             exit(1);                                                             \
         }                                                                        \
-    } while(0)
+    } while(0);
+
+
+
+size_t FindBalanceThread(size_t num)
+{
+    int device;
+    cudaGetDevice(&device);
+
+    cudaDeviceProp deviceProp;
+    cudaGetDeviceProperties(&deviceProp, device);
+
+
+    for (size_t testNum = deviceProp.maxThreadsPerBlock; testNum != 0; --testNum) {
+        if ((num % testNum) == 0) {
+            return testNum;
+        }
+    }
+
+    return 1;
+};
+
+
+template<typename F>
+__global__ void AllocateArrayInGpuWithDefaultValue(F *inputs, F *defaultNum)
+{
+    size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    inputs[inputIndex] = *defaultNum;
+};
+
+
+
+template<typename T>
+void CudaMemoryFIll(T*allocatedArray, size_t size, T defaultValue)
+{
+    T* defaultValueDevice;
+
+    cudaMalloc((void**)&defaultValueDevice, sizeof(T));
+
+    cudaMemcpy(defaultValueDevice, &defaultValue, sizeof(T), cudaMemcpyHostToDevice);
+    ///////////////////////////////////////////////////////////// 
+    size_t thredBalance = FindBalanceThread(size);
+
+
+    dim3 blocksPerGrid(size / thredBalance);
+    dim3 threadsPerBlock(thredBalance);
+    /////////////////////////////////////////////////////////////
+     
+    AllocateArrayInGpuWithDefaultValue<<<blocksPerGrid, threadsPerBlock>>>(allocatedArray, defaultValueDevice);
+}
+
 
 float* AllocateGpuFloatArray(size_t size)
 {
@@ -21,11 +72,13 @@ float* AllocateGpuFloatArray(size_t size)
 
     CUDA_CHECK(cudaMalloc((void**)&values, size * sizeof(float)));
     // cudaMemcpy(d_input, input, size * sizeof(float), cudaMemcpyHostToDevice);
-
-   //  free(input);
+   
+    CudaMemoryFIll(values, size, 0.00f);
 
     return values;
 };
+
+ 
 
 
 template<typename T>
@@ -68,37 +121,6 @@ T* AddElement(T* array, size_t size, T element)
 //    myStruct->*property = newValue;
 //}
 
-template<typename F>
-__global__ void AllocateArrayInGpuWithDefaultValue(F* inputs, size_t* size, F* defaultNum)
-{
-    size_t inputIndex = blockIdx.x * blockDim.x + threadIdx.x;
-
-    inputs[inputIndex] = *defaultNum;
-
-    // printf("DDD Float value: %d\n", inputIndex);
-     ///printf("Fill Float value: %f\n", inputs[inputIndex]);
-     // printf("Fill Float value: %f\n", inputs[inputIndex]);
-};
- 
-
-
-size_t FindBalanceThread(size_t num)
-{
-    int device;
-    cudaGetDevice(&device);
-
-    cudaDeviceProp deviceProp;
-    cudaGetDeviceProperties(&deviceProp, device);
-
-
-    for (size_t testNum = deviceProp.maxThreadsPerBlock; testNum != 0; --testNum) {
-        if ((num % testNum) == 0) {
-            return testNum;
-        }
-    }
-
-    return 1;
-};
 
 
 __global__ void LogGpuFloatArray(float* inputs, size_t* size)
@@ -107,11 +129,11 @@ __global__ void LogGpuFloatArray(float* inputs, size_t* size)
 
 
     if (index == 0) {
-        printf("\n[ %.10f", inputs[index]);
+        printf("\n[ %d: %.10f", index, inputs[index]);
     }
     else {
-        printf(", %.10f", inputs[index]);
-    }
+        printf(", %d: %.10f", index, inputs[index]);
+    } 
 
     if (index == (*size - 1)) {
 
@@ -121,7 +143,7 @@ __global__ void LogGpuFloatArray(float* inputs, size_t* size)
 
 
 
-float* NormalizeDeltas(float* inputs, size_t size)
+float* NormalizeDeltas(float *inputs, size_t size)
 { 
     float maxValue = 0.0f;
 
@@ -140,3 +162,102 @@ float* NormalizeDeltas(float* inputs, size_t size)
     return normalizedDeltas;
 }
 
+__global__ void GpuSumFloatArray(float *sumAt, float *inputs)
+{
+    size_t index = blockIdx.x * blockDim.x + threadIdx.x;
+
+    atomicAdd(sumAt, inputs[index]);
+}
+
+float* SumFloatArray(float* inputs, size_t* size)
+{
+    size_t inputSize;
+
+    CUDA_CHECK(cudaMemcpy(&inputSize, size, sizeof(size_t), cudaMemcpyDeviceToHost));
+
+
+    size_t thredBalance = FindBalanceThread(inputSize);
+
+
+    dim3 blocksPerGrid(inputSize / thredBalance);
+    dim3 threadsPerBlock(thredBalance);
+
+    float *sumAt;
+    //printf("EEEE: %d \n",size);
+
+    CUDA_CHECK(cudaMalloc((void**)&sumAt, sizeof(float)));
+
+    float sumAtHost = 0;
+
+    cudaMemcpy(sumAt, &sumAtHost, sizeof(float), cudaMemcpyHostToDevice);
+
+    GpuSumFloatArray<<<blocksPerGrid, threadsPerBlock>>>(sumAt, inputs);
+
+    return sumAt;
+};
+
+__global__ void GpuDisadvantageSameSizeFloatArrayElements(float* outputs, float* desiredOutputs, float* errorAs) {
+    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+  //  printf("outputIndexxxx: %d \n", outputIndex);
+    float output = outputs[outputIndex];
+    //float outputTanh = tanh(output);
+    //sigmoidX* (1 - sigmoidX);
+    errorAs[outputIndex] = (desiredOutputs[outputIndex] - output);
+
+   //  printf("EEEE: %.10f-%.10f=%.10f \n", desiredOutputs[outputIndex], output, errorAs[outputIndex]);
+   // printf("errorAs[outputIndex]: %.5f : %.5f : %.5f \n", desiredOutputs[outputIndex], output, (desiredOutputs[outputIndex] - output) * (output * (1 - output)));
+};
+
+float* DisadvantageSameSizeFloatArrayElements(float* inputs, float* disadvantageInputs, size_t* size)
+{
+
+    size_t inputSize;
+
+    cudaMemcpy(&inputSize, size, sizeof(size_t), cudaMemcpyDeviceToHost);
+
+
+    size_t thredBalance = FindBalanceThread(inputSize);
+
+
+    dim3 blocksPerGrid(inputSize / thredBalance);
+    dim3 threadsPerBlock(thredBalance);
+
+
+    float* disadvantagedInputs = AllocateGpuFloatArray(inputSize);
+
+    GpuDisadvantageSameSizeFloatArrayElements<<<blocksPerGrid, threadsPerBlock>>>(inputs, disadvantageInputs, disadvantagedInputs);
+
+    return disadvantagedInputs;
+}
+
+
+__global__ void GpuSquareArrayNumbers(float* inputs, float* outputs) {
+    size_t outputIndex = blockIdx.x * blockDim.x + threadIdx.x;
+
+    float input = inputs[outputIndex];
+
+
+    outputs[outputIndex] = input * input; 
+};
+
+float* SquareArrayNumbers(float* inputs, size_t* size)
+{
+
+    size_t inputSize;
+
+    cudaMemcpy(&inputSize, size, sizeof(size_t), cudaMemcpyDeviceToHost);
+
+
+    size_t thredBalance = FindBalanceThread(inputSize);
+
+
+    dim3 blocksPerGrid(inputSize / thredBalance);
+    dim3 threadsPerBlock(thredBalance);
+     
+
+    float* outputs = AllocateGpuFloatArray(inputSize);
+    GpuSquareArrayNumbers<<<blocksPerGrid, threadsPerBlock>>>(inputs, outputs);
+
+    return outputs;
+}

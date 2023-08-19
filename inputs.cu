@@ -14,21 +14,13 @@ typedef struct Inputs
 
 void FillInputsDefaultValue(Inputs* inputs, float defaultValue)
 {
-    /////////////////////////////////////////////////////////////
-    float* defaultValueDevice;
-
-    cudaMalloc((void**)&defaultValueDevice, sizeof(float));
-
-    cudaMemcpy(defaultValueDevice, &defaultValue, sizeof(float), cudaMemcpyHostToDevice);
     ///////////////////////////////////////////////////////////// 
     size_t inputSize;
 
-
     cudaMemcpy(&inputSize, inputs->size, sizeof(size_t), cudaMemcpyDeviceToHost);
-    /////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////// 
 
-    AllocateArrayInGpuWithDefaultValue<<<inputs->blocksPerGrid, inputs->threadsPerBlock>>>(inputs->allocatedInputs, inputs->size, defaultValueDevice);
-    /////////////////////////////////////////////////////////////
+    CudaMemoryFIll(inputs->allocatedInputs, inputSize, defaultValue); 
 };
 
 Inputs NewInputs(size_t size)
@@ -61,7 +53,7 @@ Inputs NewInputs(size_t size)
     return input;
 };
 
-Inputs FloatToInputs(float* inputs,const size_t size)
+Inputs FloatToInputs(float* inputs, const size_t size)
 {  
     ////////////////////////////////
     size_t* sizeDevice;
@@ -95,3 +87,32 @@ void LogInput(Inputs* inputs) {
 
      LogGpuFloatArray<<<inputs->blocksPerGrid, inputs->threadsPerBlock>>>(inputs->allocatedInputs, inputs->size);
 };
+
+void LogError(Inputs* inputs, float*  desiredOutput) {
+
+    float* errors = DisadvantageSameSizeFloatArrayElements(inputs->allocatedInputs, desiredOutput, inputs->size);
+
+    float* squareErrors = SquareArrayNumbers(errors, inputs->size);
+
+    float* gpuErrorSum = SumFloatArray(squareErrors, inputs->size);
+    
+    float errorSum;
+    
+    cudaMemcpy(&errorSum, gpuErrorSum, sizeof(float), cudaMemcpyDeviceToHost);
+
+    printf("ERROR: %.10f\n ", errorSum);
+
+    cudaFree(errors);
+    cudaFree(gpuErrorSum);
+    cudaFree(squareErrors);
+};
+
+
+size_t InputSize(Inputs* input) {
+
+    size_t inputsSize;
+
+    cudaMemcpy(&inputsSize, input->size, sizeof(size_t), cudaMemcpyDeviceToHost);
+
+    return inputsSize;
+ }

@@ -71,21 +71,21 @@ int main()
 
     Channel chan = {};
 
-    AddOutputInput(&chan, 5);
-    AddOutputInput(&chan, 5);
     AddOutputInput(&chan, 3);
+    AddOutputInput(&chan, 16);
+    AddOutputInput(&chan, 2);
 
 
-    float inputs[5] = { 1,3,4,2,7 };
-    float inputs2[5] = { 3,3,5,8,7 };
+    float inputs[5] = { 1,3,4 };
+    float inputs2[5] = { 3,0,5 };
    // Inputs* forwardInputs = FloatToInputs(inputs, 5);
 
 
-    float* inputsNormalizedDeltas = NormalizeDeltas(inputs, 5);
-    float* inputsNormalizedDeltas2 = NormalizeDeltas(inputs2, 5);
+    float* inputsNormalizedDeltas = NormalizeDeltas(inputs, 3);
+    float* inputsNormalizedDeltas2 = NormalizeDeltas(inputs2, 3);
 
-    Inputs forwardIn = FloatToInputs(inputsNormalizedDeltas, 5);
-    Inputs forwardIn2 = FloatToInputs(inputsNormalizedDeltas2, 5);
+    Inputs forwardIn = FloatToInputs(inputsNormalizedDeltas, 3);
+    Inputs forwardIn2 = FloatToInputs(inputsNormalizedDeltas2, 3);
 
 
       
@@ -94,39 +94,65 @@ int main()
 
 
     ////////////////////////////////////
-    float trainDesiredOutputs[3] = { 0,0,1 };
-    float trainDesiredOutputs2[3] = { 0,1,0 };
+    float trainDesiredOutputs[3] = {  0 , 1 };
+    float trainDesiredOutputs2[3] = { 1 , 0 };
 
-    Inputs trainDesiredOutputsForwardIn = FloatToInputs(trainDesiredOutputs, 3); 
+    Inputs trainDesiredOutputsForwardIn = FloatToInputs(trainDesiredOutputs, 2); 
 
-    Inputs trainDesiredOutputsForwardIn2 = FloatToInputs(trainDesiredOutputs2, 3);
+    Inputs trainDesiredOutputsForwardIn2 = FloatToInputs(trainDesiredOutputs2, 2);
     ////////////////////////////////////
+    /*for (int i = 0; i < 4; i++) {
+         MakeFillAllocatedOutputs(&chan, 0);
+         Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 0.01);
+    }
 
-    //for (int i = 0; i < 5; i++) {
-    //    MakeFillAllocatedOutputs(&chan, 0);
-    //    Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 1);
-    //   // printf("INDDTRდ: %d \n", i);/*
-    //    MakeFillAllocatedOutputs(&chan, 0);
-    //    Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 1); 
-    //};
-    //Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 1);
+    MakeFillAllocatedOutputs(&chan, 0);
+    Inputs forwardResult4 = ForWards(&chan, &forwardIn2);
 
-    Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 1);
+    LogInput(&forwardResult4);
+    LogInput(&trainDesiredOutputsForwardIn2);   
+    */
+
+    /*
+    MakeFillAllocatedOutputs(&chan, 0);
+    Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 1);
+    /////////////////////////////////////////////////////////////////////////
+    MakeFillAllocatedOutputs(&chan, 0);
+    Inputs forwardResult4 = ForWards(&chan, &forwardIn2);
+
+    LogInput(&forwardResult4);
+    LogInput(&trainDesiredOutputsForwardIn2);
+    */
+    //LogEroor(&forwardResult4, trainDesiredOutputsForwardIn.allocatedInputs);
+
+     for (int i = 0; i < 10000; i++) {
+
+     MakeFillAllocatedOutputs(&chan, 0);
+     Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 0.1f);
+     //////////////////////////////////////////////
+     MakeFillAllocatedOutputs(&chan, 0); 
+     Train(&chan, &forwardIn2, &trainDesiredOutputsForwardIn2, 0.1f);
+     MakeFillAllocatedOutputs(&chan, 0);
+    }; 
+
+
+    //////////////////////////////////////////////
     MakeFillAllocatedOutputs(&chan, 0);
     Inputs forwardResult3 = ForWards(&chan, &forwardIn);
     LogInput(&forwardResult3);
+    LogInput(&trainDesiredOutputsForwardIn);
 
 
-    ////////////////////////////////////////////
-    //MakeFillAllocatedOutputs(&chan, 0);
-    //Inputs forwardResult4 = ForWards(&chan, &forwardIn2);
-    //LogInput(&forwardResult4);
-
-
-
+    //////////////// 
+    MakeFillAllocatedOutputs(&chan, 0);
+    Inputs forwardResult4 = ForWards(&chan, &forwardIn2);
+    LogInput(&forwardResult4);
+    LogInput(&trainDesiredOutputsForwardIn2); 
+    //////////////////////////////////////////////
+     
     cudaError_t cudaStatus = cudaGetLastError();
 
-    printf("ERROR: %d\n", cudaStatus != cudaSuccess);
+    printf("CUDA ERROR: %d\n", cudaStatus != cudaSuccess);
     if (cudaStatus != cudaSuccess) {
         fprintf(stderr, "CUDA Error: %s\n", cudaGetErrorString(cudaStatus));
         // Handle or report the error appropriately
