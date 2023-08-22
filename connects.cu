@@ -75,9 +75,9 @@ __global__ void TrainError(float* outputs, float* desiredOutputs, float* deltas)
     //float outputTanh = tanh(output);
     //sigmoidX* (1 - sigmoidX);
 
-    deltas[outputIndex] = (2 * (desiredOutputs[outputIndex] - output));
+    deltas[outputIndex] = (  (desiredOutputs[outputIndex] - output));
 
-    //printf("ER: %.5f ::: %.5f \n", deltas[outputIndex], (desiredOutputs[outputIndex] - output));
+     //printf("ER: %.5f ::: %.5f \n", deltas[outputIndex], (desiredOutputs[outputIndex] - output));
    // printf("errorAs[outputIndex]: %.5f : %.5f : %.5f \n", desiredOutputs[outputIndex], output, (desiredOutputs[outputIndex] - output) * (output * (1 - output)));
 };
 

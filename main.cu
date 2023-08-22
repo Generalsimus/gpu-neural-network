@@ -4,6 +4,7 @@
 #include <cmath>
 #include <stdio.h>
 #include <stdlib.h>
+#include "webcam.cu"
 
  
 
@@ -63,7 +64,6 @@
 
 int main()
 {
-
     float floatmin = FLT_MIN;
 
     printf("Minimal float value: %.100f \n", FLT_MAX);
@@ -72,7 +72,8 @@ int main()
     Channel chan = {};
 
     AddOutputInput(&chan, 3);
-    AddOutputInput(&chan, 16);
+    AddOutputInput(&chan, 3); 
+    //AddOutputInput(&chan, 16);
     AddOutputInput(&chan, 2);
 
 
@@ -125,7 +126,7 @@ int main()
     */
     //LogEroor(&forwardResult4, trainDesiredOutputsForwardIn.allocatedInputs);
 
-     for (int i = 0; i < 10000; i++) {
+     for (int i = 0; i < 5000; i++) {
 
      MakeFillAllocatedOutputs(&chan, 0);
      Train(&chan, &forwardIn, &trainDesiredOutputsForwardIn, 0.1f);
@@ -157,8 +158,10 @@ int main()
         fprintf(stderr, "CUDA Error: %s\n", cudaGetErrorString(cudaStatus));
         // Handle or report the error appropriately
     }
-   
-    return 0;
 
+    OPenCam();
+
+
+    return 0;
 
 }
