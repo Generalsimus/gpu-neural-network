@@ -1,0 +1,430 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "build/canvas_state_lib.dll"
+		},
+		{
+			"path" : "build/canvas_state_lib.lib"
+		},
+		{
+			"path" : "build/canvas_state_lib.pdb"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"target_link_libraries",
+			"set_target_properties",
+			"set_property",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 266,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 4425,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 9692,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 7926,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 275,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 268,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+				},
+				{
+					"fragment" : "/wd5030 /wd5051 /bigobj /utf-8 /Z7 /W3 /wd4244 /wd4267 /wd4800 /wd4291 /wd4251 /wd4275 /wd5041 /std:c++17 /GR- "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_CODEC_DECODES_JPEG"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_CODEC_DECODES_JPEG_GAINMAPS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_CODEC_DECODES_PNG"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_CODEC_DECODES_WEBP"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_ENABLE_ANDROID_UTILS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_ENABLE_DUMP_GPU"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_ENABLE_PRECOMPILE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_GANESH"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_GL"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_HAS_HEIF_LIBRARY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_HAS_WUFFS_LIBRARY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_SUPPORT_PDF"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_SUPPORT_XPS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_TYPEFACE_FACTORY_DIRECTWRITE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "SK_XML"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_HAS_EXCEPTIONS=0"
+				},
+				{
+					"define" : "canvas_state_lib_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/skia"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/skia/third_party/externals/emsdk/upstream/emscripten/system/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "modules__skcms::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "skia::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__expat::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__externals__spirv-tools_spvtools::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__libjpeg-turbo_libjpeg::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__libpng::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__libwebp::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__libwebp_libwebp_sse41::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__harfbuzz::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__externals__spirv-tools_spvtools_val::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__zlib::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__wuffs::@039278ea0a093c55e3e1"
+		}
+	],
+	"id" : "canvas_state_lib::@039278ea0a093c55e3e1",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/debug /INCREMENTAL /DEBUG:FASTLINK",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "build\\skia.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\Ole32.Lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\OleAut32.Lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\fontsub.lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\User32.Lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\USP10.Lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\Gdi32.Lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "\"C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22000.0\\um\\x64\\OpenGL32.Lib\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__wuffs.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__libwebp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "build\\third_party__libwebp_libwebp_sse41.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__harfbuzz.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\modules__skcms.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__libjpeg-turbo_libjpeg.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__externals__spirv-tools_spvtools_val.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "build\\third_party__externals__spirv-tools_spvtools.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__libpng.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__zlib.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "build\\third_party__expat.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "canvas_state_lib",
+	"nameOnDisk" : "canvas_state_lib.dll",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/tests/CanvasStateHelpers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/tests/CanvasStateHelpers.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

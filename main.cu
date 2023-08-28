@@ -4,7 +4,9 @@
 #include <cmath>
 #include <stdio.h>
 #include <stdlib.h>
-#include "webcam.cu"
+#include "skia.cu"
+#include <windows.h>
+
 
  
 
@@ -56,7 +58,35 @@
 //    //printf("output: %.2f\n", outputs[outputIndex]);
 //};
 
- 
+LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+    switch (msg) {
+        case WM_PAINT: {
+            PAINTSTRUCT ps;
+            HDC hdc = BeginPaint(hwnd, &ps);
+
+            // Create Skia Surface and Canvas
+            sk_sp<SkSurface> surface = SkSurface::MakeFromHWND(hwnd);
+            SkCanvas* canvas = surface->getCanvas();
+
+            // Draw using Skia functions
+            SkPaint paint;
+            paint.setColor(SK_ColorBLUE);
+            canvas->drawRect(SkRect::MakeLTRB(50, 50, 150, 150), paint);
+
+            // Clean up
+            EndPaint(hwnd, &ps);
+            return 0;
+        }
+        case WM_CLOSE:
+            DestroyWindow(hwnd);
+            return 0;
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            return 0;
+        default:
+            return DefWindowProc(hwnd, msg, wParam, lParam);
+    }
+}
  
 
  
@@ -64,6 +94,33 @@
 
 int main()
 {
+
+    WNDCLASS wc = {0};
+    wc.lpfnWndProc = WndProc;
+    wc.hInstance = GetModuleHandle(NULL);
+    wc.hbrBackground = (HBRUSH)(COLOR_BACKGROUND);
+    wc.lpszClassName = "SkiaWindowClass";
+    RegisterClass(&wc);
+
+    // Create window
+    HWND hwnd = CreateWindow("SkiaWindowClass", "Skia Window", WS_OVERLAPPEDWINDOW,
+                             CW_USEDEFAULT, CW_USEDEFAULT, 800, 600,
+                             NULL, NULL, wc.hInstance, NULL);
+    if (!hwnd) {
+        return -1;
+    }
+
+    ShowWindow(hwnd, SW_SHOW);
+
+    MSG msg;
+    while (GetMessage(&msg, NULL, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+
+    return msg.wParam;
+
+    SKIA();
     float floatmin = FLT_MIN;
 
     printf("Minimal float value: %.100f \n", FLT_MAX);
@@ -159,7 +216,6 @@ int main()
         // Handle or report the error appropriately
     }
 
-    OPenCam();
 
 
     return 0;

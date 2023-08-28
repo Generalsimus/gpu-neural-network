@@ -1,0 +1,4958 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/3d.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/aaa.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/aaclip.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/aarectmodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/aaxfermodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/addarc.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/all_bitmap_configs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/alpha_image.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/alphagradients.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/analytic_gradients.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/androidblendmodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/animated_gif.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/animated_image_orientation.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/animatedimageblurs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/anisotropic.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/annotated_text.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/arcofzorro.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/arcto.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/arithmode.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/asyncrescaleandread.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/b_119394958.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/backdrop.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/backdrop_imagefilter_croprect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/badpaint.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/batchedconvexpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bc1_transparency.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/beziers.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bicubic.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bigblurs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bigmatrix.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bigrect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bigtext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bigtileimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmapcopy.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmapfilters.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmapimage.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmappremul.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmaprect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmaprecttest.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmapshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bitmaptiled.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bleed.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blend.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurcircles.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurcircles2.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurignorexform.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurimagevmask.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurpositioning.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurquickreject.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurrect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurredclippedcircle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurroundrect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/blurtextsmallradii.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bmpfilterqualityrepeat.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug12866.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug5252.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug530095.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug615686.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug6643.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug6783.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bug9331.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/circle_sizes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/circulararcs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/circularclips.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clip_error.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clip_sierpinski_region.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clip_strokerect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clipdrawdraw.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clippedbitmapshaders.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clipshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/collapsepaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/color4f.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/coloremoji.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/coloremoji_blendmodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colorfilteralpha8.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colorfilterimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colorfilters.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colormatrix.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colorspace.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colorwheel.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/colrv1.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/complexclip.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/complexclip2.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/complexclip3.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/complexclip4.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/complexclip_blur_tiled.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/composecolorfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/composeshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/compositor_quads.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/compressed_textures.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/concavepaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/conicpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/convex_all_line_paths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/convexpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/convexpolyclip.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/coordclampshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/copy_to_4444.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1041204.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1073670.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1086705.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1113794.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1139750.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1156804.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1162942.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1167277.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1174186.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1174354.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1177833.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1257515.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_1313579.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_224618.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_691386.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_788500.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_847759.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_884166.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_887103.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_892988.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_899512.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_905548.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_908646.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_913349.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_918512.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_938592.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_946965.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_947055.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crbug_996140.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crop_imagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/croppedrects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/crosscontextimage.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/cubicpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/daa.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dashcircle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dashcubics.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dashing.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/degeneratesegments.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dftext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dftext_blob_persp.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/discard.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/displacement.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/distantclip.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/draw_bitmap_rect_skbug4374.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawable.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawatlas.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawatlascolor.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawbitmaprect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawglyphs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawimageset.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawlines_with_local_matrix.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawminibitmaprect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawregion.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawregionmodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dropshadowimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drrect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drrect_small_inner.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/dstreadshuffle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/ducky_yuv_blend.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/emboss.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/emptypath.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/encode.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/encode_alpha_jpeg.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/encode_color_types.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/encode_platform.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/encode_srgb.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/exoticformats.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fadefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fatpathfill.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fillrect_gradient.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/filltypes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/filltypespersp.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/filterbug.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/filterfastbounds.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/filterindiabox.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/flippity.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fontcache.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fontmgr.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fontregen.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fontscaler.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fontscalerdistortable.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gammatext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/getpostextpath.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/giantbitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/glyph_pos.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gm.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradient_dirty_laundry.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradient_matrix.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradients.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradients_2pt_conical.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradients_degenerate.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradients_no_texture.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gradtext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/graphite_replay.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/graphitestart.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/grayscalejpg.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hairlines.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hairmodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hardstop_gradients.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hardstop_gradients_many.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/highcontrastfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hittestpath.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hsl.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/hugepath.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/image.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/image_pict.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/image_shader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imageblur.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imageblur2.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imageblurclampmode.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imageblurrepeatmode.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imageblurtiled.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefilters.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefiltersbase.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefiltersclipped.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefilterscropexpand.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefilterscropped.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefiltersgraph.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefiltersscaled.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefiltersstroked.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefilterstransformed.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefiltersunpremul.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagefromyuvtextures.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagemagnifier.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagemakewithfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagemasksubset.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imageresizetiled.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagesource.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/imagesource2.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/internal_links.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/inverseclip.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/inversepaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/jpg_color_cube.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/kawase_blur_rt.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/labyrinth.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/largeclippedpath.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/largeglyphblur.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lattice.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lcdblendmodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lcdoverlap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lcdtext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lighting.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/linepaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/localmatriximagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/localmatriximageshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/localmatrixshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lumafilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mac_aa_explorer.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/make_raster_image.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/makecolorspace.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mandoline.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/manypathatlases.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/manypaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/matrixconvolution.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/matriximagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mesh.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mipmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mirrortile.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mixedtextblobs.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/mixercolorfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/modecolorfilters.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/morphology.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/nearesthalfpixelimage.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/nested.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/ninepatchstretch.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/nonclosedpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/offsetimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/orientation.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/ovals.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/overdrawcanvas.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/overdrawcolorfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/overstroke.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/p3.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/palette.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/patch.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/path_stroke_with_zero_length.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/patharcto.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathcontourstart.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/patheffects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathfill.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathinterior.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathmaskcache.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathmeasure.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathopsinverse.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pathreverse.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pdf_never_embed.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/perlinnoise.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/perspimages.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/perspshaders.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/persptext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/picture.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pictureimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pictureimagegenerator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pictureshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pictureshadercache.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/pictureshadertile.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/plus.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/points.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/poly2poly.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/polygonoffset.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/polygons.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/postercircle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/preservefillrule.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/quadpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/radial_gradient_precision.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rasterhandleallocator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/readpixels.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/recordopts.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/repeated_bitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/resizeimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rippleshadergm.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/roundrects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rrect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rrectclipdrawpaint.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rsxtext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/runtimecolorfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/runtimefunctions.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/runtimeimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/runtimeintrinsics.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/runtimeshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/samplerstress.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/savelayer.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/scaledemoji.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/scaledemoji_rendering.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/scaledrects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/scaledstrokes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/shadermaskfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/shaderpath.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/shadertext3.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/shadowutils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/shallowgradient.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/shapes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/sharedcorners.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/showmiplevels.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/simpleaaclip.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/simplerect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug1719.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_12212.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_257.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_4868.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_5321.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_8664.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_8955.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_9319.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/skbug_9819.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/slug.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/smallarc.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/smallpaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/spritebitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/srcmode.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/srgb.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/stlouisarch.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/stringart.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/stroke_rect_shader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/strokedlines.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/strokefill.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/strokerect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/strokerect_anisotropic.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/strokerects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/strokes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/stroketext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/subsetshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/surface.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/swizzle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tablecolorfilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tallstretchedbitmaps.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/testgradient.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/text_scale_skew.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblob.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobblockreordering.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobcolortrans.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobgeometrychange.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobmixedsizes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobrandomfont.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobshader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobtransforms.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/textblobuseaftergpufree.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/texteffects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/thinconcavepaths.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/thinrects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/thinstrokedrects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tiledscaledbitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tileimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tilemodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tilemodes_alpha.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tilemodes_scaled.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/tinybitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/transparency.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/trickycubicstrokes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/typeface.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/unpremul.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/userfont.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/variedtext.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/verifiers/gmverifier.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/vertices.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/verylargebitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/wacky_yuv_formats.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/widebuttcaps.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/windowrectangles.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/xfermodeimagefilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/xfermodes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/xfermodes2.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/xfermodes3.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/ycbcrimage.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/yuv420_odd_dim.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/aarecteffect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/attributes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/beziereffects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/bigrrectaaeffect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clear_swizzle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/clockwise.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/constcolorprocessor.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/convexpolyeffect.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/destcolor.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/drawquadset.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fp_sample_chaining.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fpcoordinateoverride.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fwidth_squircle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/gpu_blur_utils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/lazytiling.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rrects.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/texelsubset.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/yuvtorgbsubset.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/rectangletexture.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gm.dir/./C_/skia/gm/fiddle.cpp.obj"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"add_dependencies",
+			"set_target_properties",
+			"set_property",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1904,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1922,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1919,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 1906,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+				},
+				{
+					"fragment" : "/wd5030 /wd5051 /bigobj /utf-8 /Z7 /W3 /wd4244 /wd4267 /wd4800 /wd4291 /wd4251 /wd4275 /wd5041 /std:c++17 /GR- "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "GR_TEST_UTILS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_JPEG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_JPEG_GAINMAPS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_PNG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_WEBP"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_ANDROID_UTILS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_DUMP_GPU"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_PARAGRAPH"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_PRECOMPILE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_SKOTTIE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_SKOTTIE_SKSLEFFECT"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GAMMA_APPLY_TO_A8"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GANESH"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GL"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_HAS_HEIF_LIBRARY"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_HAS_WUFFS_LIBRARY"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_SHAPER_HARFBUZZ_AVAILABLE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_SUPPORT_PDF"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_SUPPORT_XPS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_TYPEFACE_FACTORY_DIRECTWRITE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_XML"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_HAS_EXCEPTIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/include/third_party/vulkan"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/modules/skottie/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/modules/skparagraph/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/modules/skparagraph/utils"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/modules/skshaper/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/out/config/gen"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/skia/third_party/externals/emsdk/upstream/emscripten/system/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "modules__skottie::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "skia::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "skia.h::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "modules__skparagraph::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "modules__skshaper::@039278ea0a093c55e3e1"
+		}
+	],
+	"id" : "gm::@039278ea0a093c55e3e1",
+	"name" : "gm",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				423
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/3d.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/aaa.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/aaclip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/aarectmodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/aaxfermodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/addarc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/all_bitmap_configs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/alpha_image.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/alphagradients.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/analytic_gradients.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/androidblendmodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/animated_gif.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/animated_image_orientation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/animatedimageblurs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/anisotropic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/annotated_text.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/arcofzorro.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/arcto.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/arithmode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/asyncrescaleandread.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/b_119394958.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/backdrop.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/backdrop_imagefilter_croprect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/badpaint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/batchedconvexpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bc1_transparency.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/beziers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bicubic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bigblurs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bigmatrix.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bigrect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bigtext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bigtileimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmapcopy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmapfilters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmapimage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmappremul.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmaprect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmaprecttest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmapshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bitmaptiled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bleed.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blend.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurcircles.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurcircles2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurignorexform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurimagevmask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurpositioning.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurquickreject.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurrect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurredclippedcircle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurroundrect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/blurtextsmallradii.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bmpfilterqualityrepeat.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug12866.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug5252.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug530095.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug615686.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug6643.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug6783.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bug9331.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/circle_sizes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/circulararcs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/circularclips.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clip_error.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clip_sierpinski_region.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clip_strokerect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clipdrawdraw.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clippedbitmapshaders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clipshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/collapsepaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/color4f.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/coloremoji.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/coloremoji_blendmodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colorfilteralpha8.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colorfilterimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colorfilters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colormatrix.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colorspace.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colorwheel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/colrv1.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/complexclip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/complexclip2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/complexclip3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/complexclip4.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/complexclip_blur_tiled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/composecolorfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/composeshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/compositor_quads.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/compressed_textures.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/concavepaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/conicpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/convex_all_line_paths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/convexpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/convexpolyclip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/coordclampshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/copy_to_4444.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1041204.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1073670.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1086705.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1113794.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1139750.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1156804.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1162942.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1167277.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1174186.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1174354.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1177833.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1257515.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_1313579.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_224618.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_691386.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_788500.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_847759.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_884166.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_887103.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_892988.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_899512.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_905548.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_908646.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_913349.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_918512.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_938592.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_946965.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_947055.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crbug_996140.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crop_imagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/croppedrects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/crosscontextimage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/cubicpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/daa.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dashcircle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dashcubics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dashing.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/degeneratesegments.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dftext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dftext_blob_persp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/discard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/displacement.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/distantclip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/draw_bitmap_rect_skbug4374.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawable.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawatlas.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawatlascolor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawbitmaprect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawglyphs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawimageset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawlines_with_local_matrix.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawminibitmaprect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawregion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawregionmodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dropshadowimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drrect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drrect_small_inner.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/dstreadshuffle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/ducky_yuv_blend.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/emboss.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/emptypath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/encode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/encode_alpha_jpeg.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/encode_color_types.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/encode_platform.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/encode_srgb.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/exoticformats.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fadefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fatpathfill.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fillrect_gradient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/filltypes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/filltypespersp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/filterbug.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/filterfastbounds.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/filterindiabox.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/flippity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fontcache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fontmgr.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fontregen.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fontscaler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fontscalerdistortable.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gammatext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/getpostextpath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/giantbitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/glyph_pos.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradient_dirty_laundry.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradient_matrix.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradients.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradients_2pt_conical.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradients_degenerate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradients_no_texture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gradtext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/graphite_replay.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/graphitestart.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/grayscalejpg.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hairlines.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hairmodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hardstop_gradients.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hardstop_gradients_many.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/highcontrastfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hittestpath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hsl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/hugepath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/image.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/image_pict.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/image_shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imageblur.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imageblur2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imageblurclampmode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imageblurrepeatmode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imageblurtiled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefilters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefiltersbase.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefiltersclipped.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefilterscropexpand.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefilterscropped.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefiltersgraph.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefiltersscaled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefiltersstroked.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefilterstransformed.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefiltersunpremul.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagefromyuvtextures.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagemagnifier.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagemakewithfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagemasksubset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imageresizetiled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagesource.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/imagesource2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/internal_links.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/inverseclip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/inversepaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/jpg_color_cube.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/kawase_blur_rt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/labyrinth.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/largeclippedpath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/largeglyphblur.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lattice.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lcdblendmodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lcdoverlap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lcdtext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lighting.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/linepaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/localmatriximagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/localmatriximageshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/localmatrixshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lumafilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mac_aa_explorer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/make_raster_image.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/makecolorspace.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mandoline.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/manypathatlases.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/manypaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/matrixconvolution.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/matriximagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mesh.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mipmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mirrortile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mixedtextblobs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/mixercolorfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/modecolorfilters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/morphology.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/nearesthalfpixelimage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/nested.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/ninepatchstretch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/nonclosedpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/offsetimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/orientation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/ovals.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/overdrawcanvas.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/overdrawcolorfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/overstroke.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/p3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/palette.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/patch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/path_stroke_with_zero_length.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/patharcto.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathcontourstart.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/patheffects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathfill.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathinterior.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathmaskcache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathmeasure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathopsinverse.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pathreverse.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pdf_never_embed.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/perlinnoise.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/perspimages.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/perspshaders.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/persptext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/picture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pictureimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pictureimagegenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pictureshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pictureshadercache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/pictureshadertile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/plus.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/points.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/poly2poly.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/polygonoffset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/polygons.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/postercircle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/preservefillrule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/quadpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/radial_gradient_precision.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rasterhandleallocator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/readpixels.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/recordopts.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/repeated_bitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/resizeimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rippleshadergm.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/roundrects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rrect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rrectclipdrawpaint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rsxtext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/runtimecolorfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/runtimefunctions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/runtimeimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/runtimeintrinsics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/runtimeshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/samplerstress.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/savelayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/scaledemoji.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/scaledemoji_rendering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/scaledrects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/scaledstrokes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/shadermaskfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/shaderpath.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/shadertext3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/shadowutils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/shallowgradient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/shapes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/sharedcorners.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/showmiplevels.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/simpleaaclip.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/simplerect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug1719.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_12212.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_257.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_4868.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_5321.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_8664.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_8955.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_9319.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/skbug_9819.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/slug.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/smallarc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/smallpaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/spritebitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/srcmode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/srgb.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/stlouisarch.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/stringart.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/stroke_rect_shader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/strokedlines.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/strokefill.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/strokerect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/strokerect_anisotropic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/strokerects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/strokes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/stroketext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/subsetshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/surface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/swizzle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tablecolorfilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tallstretchedbitmaps.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/testgradient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/text_scale_skew.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblob.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobblockreordering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobcolortrans.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobgeometrychange.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobmixedsizes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobrandomfont.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobshader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobtransforms.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/textblobuseaftergpufree.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/texteffects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/thinconcavepaths.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/thinrects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/thinstrokedrects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tiledscaledbitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tileimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tilemodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tilemodes_alpha.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tilemodes_scaled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/tinybitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/transparency.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/trickycubicstrokes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/typeface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/unpremul.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/userfont.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/variedtext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/verifiers/gmverifier.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/vertices.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/verylargebitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/wacky_yuv_formats.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/widebuttcaps.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/windowrectangles.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/xfermodeimagefilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/xfermodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/xfermodes2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/xfermodes3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/ycbcrimage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/yuv420_odd_dim.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/aarecteffect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/attributes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/beziereffects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/bigrrectaaeffect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clear_swizzle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/clockwise.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/constcolorprocessor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/convexpolyeffect.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/destcolor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/drawquadset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fp_sample_chaining.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fpcoordinateoverride.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fwidth_squircle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/gpu_blur_utils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/lazytiling.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rrects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/texelsubset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/yuvtorgbsubset.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/rectangletexture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/gm/fiddle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/gm/gm.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

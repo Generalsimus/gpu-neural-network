@@ -1,0 +1,86 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7380,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 7381,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "third_party__externals__spirv-tools_spvtools_language_header_cldebuginfo100::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__externals__spirv-tools_spvtools_language_header_debuginfo::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__externals__spirv-tools_spvtools_language_header_vkdebuginfo100::@039278ea0a093c55e3e1"
+		}
+	],
+	"id" : "third_party__externals__spirv-tools_spvtools_language_headers::@039278ea0a093c55e3e1",
+	"name" : "third_party__externals__spirv-tools_spvtools_language_headers",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/out/config/empty.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "UTILITY"
+}

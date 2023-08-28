@@ -1,0 +1,186 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "build/CMakeFiles/typeface_freetype.dir/./empty.cpp.obj"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"set_target_properties",
+			"set_property",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 5372,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 5380,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 5373,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+				},
+				{
+					"fragment" : "/wd5030 /wd5051 /bigobj /utf-8 /Z7 /W3 /wd4244 /wd4267 /wd4800 /wd4291 /wd4251 /wd4275 /wd5041 /std:c++17 /GR- "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "GR_TEST_UTILS=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SKIA_IMPLEMENTATION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_ENABLE_PRECOMPILE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_GAMMA_APPLY_TO_A8"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_GANESH"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_HAS_EXCEPTIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/skia"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/skia/third_party/externals/emsdk/upstream/emscripten/system/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "typeface_freetype::@039278ea0a093c55e3e1",
+	"name" : "typeface_freetype",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/out/config/empty.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

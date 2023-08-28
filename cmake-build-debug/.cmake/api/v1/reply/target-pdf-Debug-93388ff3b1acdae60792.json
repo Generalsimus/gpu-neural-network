@@ -1,0 +1,641 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkClusterator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkDeflate.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkKeyedImage.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFBitmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFDevice.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFDocument.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFFont.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFFormXObject.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFGradientShader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFGraphicStackState.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFGraphicState.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFMakeCIDGlyphWidthsArray.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFMakeToUnicodeCmap.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFMetadata.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFResourceDict.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFShader.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFSubsetFont.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFTag.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFType1Font.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFTypes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkPDFUtils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/pdf.dir/./C_/skia/src/pdf/SkJpegInfo_libjpegturbo.cpp.obj"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"add_dependencies",
+			"set_target_properties",
+			"set_property",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3150,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3167,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3164,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3152,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+				},
+				{
+					"fragment" : "/wd5030 /wd5051 /bigobj /utf-8 /Z7 /W3 /wd4244 /wd4267 /wd4800 /wd4291 /wd4251 /wd4275 /wd5041 /std:c++17 /GR- "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "GR_TEST_UTILS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SKIA_IMPLEMENTATION=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_JPEG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_JPEG_GAINMAPS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_PRECOMPILE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GAMMA_APPLY_TO_A8"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GANESH"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_PDF_USE_HARFBUZZ_SUBSET"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_SUPPORT_PDF"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_XML"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_HAS_EXCEPTIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/third_party/externals/zlib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/third_party/harfbuzz"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/third_party/externals/harfbuzz/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/third_party/libjpeg-turbo"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/third_party/externals/libjpeg-turbo"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/skia/third_party/externals/emsdk/upstream/emscripten/system/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "third_party__libjpeg-turbo_libjpeg::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__harfbuzz::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "third_party__zlib::@039278ea0a093c55e3e1"
+		}
+	],
+	"id" : "pdf::@039278ea0a093c55e3e1",
+	"name" : "pdf",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkClusterator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkDeflate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkKeyedImage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFBitmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFDevice.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFDocument.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFFont.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFFormXObject.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFGradientShader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFGraphicStackState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFGraphicState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFMakeCIDGlyphWidthsArray.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFMakeToUnicodeCmap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFMetadata.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFResourceDict.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFShader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFSubsetFont.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFTag.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFType1Font.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFTypes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkPDFUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/pdf/SkJpegInfo_libjpegturbo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkBitmapKey.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkClusterator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkDeflate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkJpegInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkKeyedImage.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFBitmap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFDevice.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFDocumentPriv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFFont.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFFormXObject.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFGlyphUse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFGradientShader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFGraphicStackState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFGraphicState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFMakeCIDGlyphWidthsArray.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFMakeToUnicodeCmap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFMetadata.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFResourceDict.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFShader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFSubsetFont.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFTag.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFType1Font.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFTypes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFUnion.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkPDFUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/pdf/SkUUID.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

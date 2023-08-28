@@ -1,0 +1,295 @@
+C:\Users\PC\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/PC/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\PC\CLionProjects\cuda_neu -B C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug
+-- The C compiler identification is MSVC 19.36.32537.0
+-- The CXX compiler identification is MSVC 19.36.32537.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+ninja: Entering directory `C:/skia/out/config/'
+ninja: no work to do.
+-- The ASM compiler identification is MSVC
+-- Found assembler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/bin/Hostx64/x64/cl.exe
+-- Configuring done (2.7s)
+-- Generating done (1.0s)
+-- Build files have been written to: C:/Users/PC/CLionProjects/cuda_neu/cmake-build-debug
+
+Cannot get compiler information:
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file10202707251918376242 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file10202707251918376242=/TC /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DXML_STATIC /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DXML_STATIC /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DXML_STATIC /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file3001381358735699858 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file3001381358735699858=/TP /DHAVE_CONFIG_OVERRIDE_H /DHAVE_OT /DHB_NO_FALLBACK_SHAPE /DHB_NO_WIN1256 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TP /DHAVE_CONFIG_OVERRIDE_H /DHAVE_OT /DHB_NO_FALLBACK_SHAPE /DHB_NO_WIN1256 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067<<
+	
+	cl /TP /DHAVE_CONFIG_OVERRIDE_H /DHAVE_OT /DHB_NO_FALLBACK_SHAPE /DHB_NO_WIN1256 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file11710105350026343254 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file11710105350026343254=/TP /DNOMINMAX /DSK_USING_THIRD_PARTY_ICU /DU_COMMON_IMPLEMENTATION /DU_DISABLE_RENAMING /DU_ENABLE_DYLOAD=0 /DU_I18N_IMPLEMENTATION /DU_NOEXCEPT= /DU_STATIC_IMPLEMENTATION /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /D_XOPEN_SOURCE=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /GR /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TP /DNOMINMAX /DSK_USING_THIRD_PARTY_ICU /DU_COMMON_IMPLEMENTATION /DU_DISABLE_RENAMING /DU_ENABLE_DYLOAD=0 /DU_I18N_IMPLEMENTATION /DU_NOEXCEPT= /DU_STATIC_IMPLEMENTATION /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /D_XOPEN_SOURCE=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /GR /Be /Bd /EP /w /wd4067<<
+	
+	cl /TP /DNOMINMAX /DSK_USING_THIRD_PARTY_ICU /DU_COMMON_IMPLEMENTATION /DU_DISABLE_RENAMING /DU_ENABLE_DYLOAD=0 /DU_I18N_IMPLEMENTATION /DU_NOEXCEPT= /DU_STATIC_IMPLEMENTATION /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /D_XOPEN_SOURCE=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /GR /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file1631060394848780130 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file1631060394848780130=/TP /DNOMINMAX /DSK_USING_THIRD_PARTY_ICU /DU_COMMON_IMPLEMENTATION /DU_DISABLE_RENAMING=0 /DU_DISABLE_VERSION_SUFFIX=1 /DU_HAVE_LIB_SUFFIX=1 /DU_I18N_IMPLEMENTATION /DU_LIB_SUFFIX_C_NAME=_skia /DU_STATIC_IMPLEMENTATION /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TP /DNOMINMAX /DSK_USING_THIRD_PARTY_ICU /DU_COMMON_IMPLEMENTATION /DU_DISABLE_RENAMING=0 /DU_DISABLE_VERSION_SUFFIX=1 /DU_HAVE_LIB_SUFFIX=1 /DU_I18N_IMPLEMENTATION /DU_LIB_SUFFIX_C_NAME=_skia /DU_STATIC_IMPLEMENTATION /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067<<
+	
+	cl /TP /DNOMINMAX /DSK_USING_THIRD_PARTY_ICU /DU_COMMON_IMPLEMENTATION /DU_DISABLE_RENAMING=0 /DU_DISABLE_VERSION_SUFFIX=1 /DU_HAVE_LIB_SUFFIX=1 /DU_I18N_IMPLEMENTATION /DU_LIB_SUFFIX_C_NAME=_skia /DU_STATIC_IMPLEMENTATION /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file4278922376089578889 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file4278922376089578889=/TP /DNOMINMAX /DU_DISABLE_RENAMING /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TP /DNOMINMAX /DU_DISABLE_RENAMING /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067<<
+	
+	cl /TP /DNOMINMAX /DU_DISABLE_RENAMING /DU_USING_ICU_NAMESPACE=0 /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file10070489605301354777 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file10070489605301354777=/TP /DIMGUI_ENABLE_OSX_DEFAULT_CLIPBOARD_FUNCTIONS /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TP /DIMGUI_ENABLE_OSX_DEFAULT_CLIPBOARD_FUNCTIONS /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067<<
+	
+	cl /TP /DIMGUI_ENABLE_OSX_DEFAULT_CLIPBOARD_FUNCTIONS /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file2590723469262771793 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file2590723469262771793=/TC /DC_ARITH_CODING_SUPPORTED=1 /DD_ARITH_CODING_SUPPORTED=1 /DNOMINMAX /DTURBO_FOR_WINDOWS /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DC_ARITH_CODING_SUPPORTED=1 /DD_ARITH_CODING_SUPPORTED=1 /DNOMINMAX /DTURBO_FOR_WINDOWS /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DC_ARITH_CODING_SUPPORTED=1 /DD_ARITH_CODING_SUPPORTED=1 /DNOMINMAX /DTURBO_FOR_WINDOWS /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file896784282034142144 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file896784282034142144=/TC /DDAUTH_SUPPORT=1 /DHAVE_SYS_TYPES_H=1 /DHAVE_TIME_H=1 /DMHD_USE_W32_THREADS=1 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DWINDOWS /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DDAUTH_SUPPORT=1 /DHAVE_SYS_TYPES_H=1 /DHAVE_TIME_H=1 /DMHD_USE_W32_THREADS=1 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DWINDOWS /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DDAUTH_SUPPORT=1 /DHAVE_SYS_TYPES_H=1 /DHAVE_TIME_H=1 /DMHD_USE_W32_THREADS=1 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DWINDOWS /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file3374075397648679049 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file3374075397648679049=/TC /DNOMINMAX /DPNG_INTEL_SSE /DPNG_SET_OPTION_SUPPORTED /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DNOMINMAX /DPNG_INTEL_SSE /DPNG_SET_OPTION_SUPPORTED /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DNOMINMAX /DPNG_INTEL_SSE /DPNG_SET_OPTION_SUPPORTED /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file36056321674556056 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file36056321674556056=/TC /DNOMINMAX /DWEBP_SWAP_16BIT_CSP /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DNOMINMAX /DWEBP_SWAP_16BIT_CSP /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DNOMINMAX /DWEBP_SWAP_16BIT_CSP /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file10992269018763335760 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file10992269018763335760=/TC /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DWUFFS_CONFIG__MODULES /DWUFFS_CONFIG__MODULE__BASE /DWUFFS_CONFIG__MODULE__GIF /DWUFFS_CONFIG__MODULE__LZW /DWUFFS_IMPLEMENTATION /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DWUFFS_CONFIG__MODULES /DWUFFS_CONFIG__MODULE__BASE /DWUFFS_CONFIG__MODULE__GIF /DWUFFS_CONFIG__MODULE__LZW /DWUFFS_IMPLEMENTATION /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DWUFFS_CONFIG__MODULES /DWUFFS_CONFIG__MODULE__BASE /DWUFFS_CONFIG__MODULE__GIF /DWUFFS_CONFIG__MODULE__LZW /DWUFFS_IMPLEMENTATION /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file11583356478904550919 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file11583356478904550919=/TC /DADLER32_SIMD_SSSE3 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DX86_WINDOWS /DZLIB_IMPLEMENTATION /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /w /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TC /DADLER32_SIMD_SSSE3 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DX86_WINDOWS /DZLIB_IMPLEMENTATION /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /w /Be /Bd /EP /w /wd4067<<
+	
+	cl /TC /DADLER32_SIMD_SSSE3 /DNOMINMAX /DWIN32_LEAN_AND_MEAN /DX86_WINDOWS /DZLIB_IMPLEMENTATION /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /w /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	
+	Compiler exited with error code 2: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe" @C:\Users\PC\AppData\Local\Temp\response-file8453276998593453 C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049 | @response-file8453276998593453=/TP /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32537 for x64
+	Copyright (C) Microsoft Corporation.  All rights reserved.
+	
+	all:
+		@cd C:\Users\PC\CLionProjects\cuda_neu\cmake-build-debug\build
+		@set INCLUDE=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\include;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt;C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt
+		@set LIB=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\\lib\10.0.22000.0\\um\x64
+		@set LIBPATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\ATLMFC\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.22000.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.22000.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+		@set CL=
+		@set _CL_=
+		@set LINK=
+		C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\cl.exe @<< C:\Users\PC\AppData\Local\Temp\compiler-file16590527216760585049
+	/TP /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067<<
+	
+	cl /TP /DNOMINMAX /DWIN32_LEAN_AND_MEAN /D_CRT_SECURE_NO_WARNINGS /D_HAS_EXCEPTIONS=0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi /w /wd5030 /wd5051 /bigobj /utf-8 /Z7 /O2 /Zc:inline /std:c++17 /GR- /Be /Bd /EP /w /wd4067
+	cl : Command line warning D9025 : overriding '/Zi' with '/Z7'
+	cl : Command line warning D9025 : overriding '/Od' with '/O2'
+	cl : Command line error D8016 : '/RTC1' and '/O2' command-line options are incompatible
+	
+	

@@ -1,0 +1,280 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "build/CMakeFiles/modules__skottie_tool_cpu.dir/./C_/skia/modules/skottie/src/SkottieTool.cpp.obj"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"add_dependencies",
+			"set_target_properties",
+			"set_property",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 6237,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 6251,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 6248,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 6238,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+				},
+				{
+					"fragment" : "/wd5030 /wd5051 /bigobj /utf-8 /Z7 /W3 /wd4244 /wd4267 /wd4800 /wd4291 /wd4251 /wd4275 /wd5041 /std:c++17 /GR- "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "CPU_ONLY"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "GR_TEST_UTILS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_JPEG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_JPEG_GAINMAPS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_PNG"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_CODEC_DECODES_WEBP"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_ANDROID_UTILS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_DUMP_GPU"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_PRECOMPILE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_SKOTTIE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_ENABLE_SKOTTIE_SKSLEFFECT"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GAMMA_APPLY_TO_A8"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GANESH"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_GL"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_HAS_HEIF_LIBRARY"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_HAS_WUFFS_LIBRARY"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_SUPPORT_PDF"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_SUPPORT_XPS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_TYPEFACE_FACTORY_DIRECTWRITE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SK_XML"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "_HAS_EXCEPTIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/include/third_party/vulkan"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/modules/skottie/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia/modules/skottie/utils"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/skia"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/skia/third_party/externals/emsdk/upstream/emscripten/system/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "modules__skottie::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "experimental__ffmpeg_video_encoder::@039278ea0a093c55e3e1"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "skia::@039278ea0a093c55e3e1"
+		}
+	],
+	"id" : "modules__skottie_tool_cpu::@039278ea0a093c55e3e1",
+	"name" : "modules__skottie_tool_cpu",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/modules/skottie/src/SkottieTool.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

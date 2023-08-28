@@ -1,0 +1,851 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/AtlasTypes.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/Blend.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/BlendFormula.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/DitherUtils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/PipelineUtils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/RectanizerPow2.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/RectanizerSkyline.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/ResourceKey.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/ShaderErrorHandler.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/Swizzle.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/TiledTextureUtils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/tessellate/FixedCountBufferUtils.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/gpu/tessellate/Tessellation.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/DistanceFieldAdjustTable.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/GlyphVector.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/SDFMaskFilter.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/SDFTControl.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/SkChromeRemoteGlyphCache.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/Slug.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/SlugImpl.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/StrikeCache.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/SubRunAllocator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/SubRunContainer.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/TextBlob.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/TextBlobRedrawCoordinator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/text/gpu/VertexFiller.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/sksl/codegen/SkSLGLSLCodeGenerator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/sksl/codegen/SkSLMetalCodeGenerator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/sksl/codegen/SkSLPipelineStageCodeGenerator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/sksl/codegen/SkSLSPIRVCodeGenerator.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/sksl/codegen/SkSLSPIRVtoHLSL.cpp.obj"
+		},
+		{
+			"path" : "build/CMakeFiles/gpu_shared.dir/./C_/skia/src/sksl/codegen/SkSLWGSLCodeGenerator.cpp.obj"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"set_target_properties",
+			"set_property",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/skia/out/config/CMakeLists.ext",
+			"C:/skia/out/config/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2560,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2569,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 2562,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi"
+				},
+				{
+					"fragment" : "/wd5030 /wd5051 /bigobj /utf-8 /Z7 /W3 /wd4244 /wd4267 /wd4800 /wd4291 /wd4251 /wd4275 /wd5041 /std:c++17 /GR- "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "GR_TEST_UTILS=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SKIA_IMPLEMENTATION=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_ALLOW_STATIC_GLOBAL_INITIALIZERS=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_ENABLE_PRECOMPILE"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_GAMMA_APPLY_TO_A8"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SK_GANESH"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "_HAS_EXCEPTIONS=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.36.32532/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/shared"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/ucrt"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/um"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22000.0/winrt"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/skia"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/skia/third_party/externals/emsdk/upstream/emscripten/system/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			]
+		}
+	],
+	"id" : "gpu_shared::@039278ea0a093c55e3e1",
+	"name" : "gpu_shared",
+	"paths" : 
+	{
+		"build" : "build",
+		"source" : "C:/skia/out/config"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/AtlasTypes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/Blend.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/BlendFormula.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/DitherUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/PipelineUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/RectanizerPow2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/RectanizerSkyline.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/ResourceKey.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/ShaderErrorHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/Swizzle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/TiledTextureUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/tessellate/FixedCountBufferUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/gpu/tessellate/Tessellation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/DistanceFieldAdjustTable.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/GlyphVector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/SDFMaskFilter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/SDFTControl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/SkChromeRemoteGlyphCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/Slug.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/SlugImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/StrikeCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/SubRunAllocator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/SubRunContainer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/TextBlob.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/TextBlobRedrawCoordinator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/text/gpu/VertexFiller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/sksl/codegen/SkSLGLSLCodeGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/sksl/codegen/SkSLMetalCodeGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/sksl/codegen/SkSLPipelineStageCodeGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/sksl/codegen/SkSLSPIRVCodeGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/sksl/codegen/SkSLSPIRVtoHLSL.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/skia/src/sksl/codegen/SkSLWGSLCodeGenerator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/include/gpu/GpuTypes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/include/gpu/MutableTextureState.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/include/gpu/ShaderErrorHandler.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/include/private/base/SingleOwner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/include/private/chromium/Slug.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/AsyncReadTypes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/AtlasTypes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/Blend.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/BlendFormula.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/BufferWriter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/DitherUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/GpuTypesPriv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/KeyBuilder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/MutableTextureStateRef.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/PipelineUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/Rectanizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/RectanizerPow2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/RectanizerSkyline.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/RefCntedCallback.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/ResourceKey.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/SkBackingFit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/SkRenderEngineAbortf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/Swizzle.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/TiledTextureUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/AffineMatrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/CullTest.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/FixedCountBufferUtils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/LinearTolerances.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/MiddleOutPolygonTriangulator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/MidpointContourParser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/PatchWriter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/StrokeIterator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/Tessellation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/gpu/tessellate/WangsFormula.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/DistanceFieldAdjustTable.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/Glyph.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/GlyphVector.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/SDFMaskFilter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/SDFTControl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/SlugImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/StrikeCache.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/SubRunAllocator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/SubRunContainer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/TextBlob.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/TextBlobRedrawCoordinator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/text/gpu/VertexFiller.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLCodeGenerator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLGLSLCodeGenerator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLMetalCodeGenerator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLPipelineStageCodeGenerator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLSPIRVCodeGenerator.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLSPIRVtoHLSL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "C:/skia/src/sksl/codegen/SkSLWGSLCodeGenerator.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

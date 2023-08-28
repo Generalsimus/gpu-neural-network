@@ -1,0 +1,5 @@
+# ninja log v5
+2	7693	7149184118443694	CMakeFiles/cuda_neu.dir/main.cu.obj	3ec7829b9c72e773
+7694	11244	7149184154006138	CMakeFiles/cuda_neu.dir/cmake_device_link.obj	b3a67db80e04edcf
+0	106	7149218634355202	build.ninja	1c78ca17c2e54889
+11244	12603	7149184166949525	cuda_neu.exe	1fb577fed5426e1a
