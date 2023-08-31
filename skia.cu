@@ -1,8 +1,9 @@
+/*
 #include <GLFW/glfw3.h>
+*/
 
 void SKIA() {
-
-    GLFWwindow* window;
+ /*   GLFWwindow* window;
 
 
     if (!glfwInit())
@@ -28,6 +29,6 @@ void SKIA() {
         glfwPollEvents();
     }
 
-    glfwTerminate();
+    glfwTerminate();*/
 
 }

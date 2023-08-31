@@ -4,8 +4,7 @@
 #include "include/core/SkPaint.h"
 #include "include/core/SkBitmap.h"
 #include "include/core/SkPath.h"
-#include "./window/window.cpp"
-#include <string>
+#include "window/window.cpp"
 
 /*
 
@@ -75,8 +74,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 
 int SKa() {
 
-
-    new Window("My Custom Window", 100, 122);
+    Window window("My Custom Window", 100, 122);
 
     return 0;
    /* // Register window class
